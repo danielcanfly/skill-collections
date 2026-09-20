@@ -15,6 +15,7 @@ A collection of reusable AI skills, agent workflows, and operational runbooks.
 | Project | Location | Description |
 |---|---|---|
 | Jobs Scraper | [danielcanfly/jobs-scraper](https://github.com/danielcanfly/jobs-scraper) | LinkedIn job scraper and tracking toolkit for product-management roles, with CLI, local MCP server, Agent Skill, and an optional Google Sheet workflow. Maintained in its own repository and not bundled into this collection. |
+| LocalBridge MCP | [danielcanfly/localbridge-mcp](https://github.com/danielcanfly/localbridge-mcp) | Self-hosted MCP bridge that lets AI assistants work with a user-owned local computer through controlled access to files, shell sessions, Git, SSH, and other CLI workflows. Maintained in its own repository and not bundled into this collection. |
 
 ## License policy
 
