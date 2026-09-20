@@ -1,52 +1,46 @@
-# Evidence-First Runtime Stabilizer
+# Evidence-First Runtime Stabilizer v3.0.0
 
-**Status:** Public v3.0.0 beta release candidate
+Status: **GitHub beta release candidate**.
 
-Evidence-First Runtime Stabilizer is a production-runtime incident skill for AI agents and human operators. It is designed for Linux services that may suffer from OOM kills, swap thrashing, slow health/read paths, restart loops, expensive worker overlap, or ambiguous production instability.
+Evidence-First Runtime Stabilizer is a CLI and agent skill for production runtime incidents: OOM, swap thrash, restart loops, slow operator reads, and heavy-worker overlap. It is designed for AI-assisted incident response, but it deliberately defaults to read-only evidence capture and explicit gates before cleanup, deployment or rollback.
 
-The skill defaults to evidence-first, read-only investigation. Deployment, rollback, cleanup, and application-specific repair require explicit hooks and authorization.
+## Install from source
 
-## What it is for
-
-Use this skill when a service shows symptoms such as:
-
-- container or service OOM kills
-- swap saturation or swap-thrashing behavior
-- slow admin/operator endpoints
-- production restart loops
-- memory pressure from overlapping workers
-- unclear runtime degradation where the final trigger and structural defect may differ
-
-## Core workflow
-
-The v3 workflow is organized as a state machine:
-
-1. Preflight
-2. Evidence capture
-3. Incident timeline
-4. Root-cause classification
-5. Rollback readiness
-6. Safe cleanup census
-7. Repair planning
-8. Regression and resource qualification
-9. Deploy gate
-10. Production validation
-11. Soak monitoring
-12. Authority comparison
-13. Closure receipt
-
-The key rule is simple: **do not clean, restart, deploy, or declare victory before preserving evidence and proving the actual production runtime recovered.**
-
-## Public-package source
-
-This entry corresponds to `EVIDENCE_FIRST_RUNTIME_STABILIZER_PUBLIC_v3.0.0.zip`.
-
-Package checksum:
-
-```text
-74c87b6fa3a8d751904ef49e17835dd40e45d80e06ae0a190f5882859c97e8c4
+```bash
+git clone <your-fork-url> evidence-first-runtime-stabilizer
+cd evidence-first-runtime-stabilizer
+python3 -m pip install -e .
+runtime-stabilizer --version
+pytest
 ```
 
-## Import note
+## Quick start
 
-This catalog entry records the Public v3 package and its intended repository location. If the full generated package is not yet expanded here, import the ZIP contents into this directory while preserving the package checksum and validation report.
+```bash
+runtime-stabilizer init --config config/runtime-stabilizer.example.toml --root ./incidents --id demo
+runtime-stabilizer run-until-blocked --incident ./incidents/demo
+runtime-stabilizer status --incident ./incidents/demo
+```
+
+Most real incidents block at root-cause adjudication or repair candidate creation because application-specific reasoning is required. That is intentional. This tool is not a magical auto-fixer; it is an evidence-first controller, adapter layer, hook runner, soak evaluator, privacy pipeline and safety rail for AI/operator workflows.
+
+## What v3 adds
+
+- CLI-first package shape with `runtime-stabilizer` entry point.
+- JSON schemas for incident state, phase receipts, telemetry and adapter capabilities.
+- Docker Compose, systemd and Kubernetes fixture directories for examples and future integration tests.
+- Capability-aware adapters with explicit gaps instead of pretending missing signals equal zero.
+- JSONL telemetry and heavy-cycle-aware soak evaluation.
+- Privacy/redaction pipeline and release hygiene checks.
+- Beta status documentation and GitHub publishing checklist.
+
+## Safety model
+
+1. Evidence before cleanup.
+2. Rollback snapshot before mutation.
+3. Human/AI adjudication for root cause and app-specific repair.
+4. Deploy requires explicit environment authorization.
+5. Final closure requires soak, production validation and authority checks when configured.
+6. Shareable bundles must be redacted and secret-scanned.
+
+See `docs/QUICKSTART.md` and `docs/AUTONOMY.md`.

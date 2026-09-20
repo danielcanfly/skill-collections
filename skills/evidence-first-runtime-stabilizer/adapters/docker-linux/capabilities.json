@@ -1,0 +1,12 @@
+{
+  "cgroup_memory": true,
+  "heavy_processes": true,
+  "host_pressure": true,
+  "kernel_oom": true,
+  "oom_killed": true,
+  "process_tree": true,
+  "public_health": true,
+  "restart_count": true,
+  "runtime": "docker-linux",
+  "swap": true
+}

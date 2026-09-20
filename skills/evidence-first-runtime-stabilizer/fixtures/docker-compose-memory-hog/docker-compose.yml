@@ -1,0 +1,5 @@
+services:
+  memory-hog:
+    image: python:3.12-slim
+    command: python -c "import time; x=[]; [x.append(bytearray(1024*1024)) for _ in range(64)]; time.sleep(3600)"
+    mem_limit: 128m

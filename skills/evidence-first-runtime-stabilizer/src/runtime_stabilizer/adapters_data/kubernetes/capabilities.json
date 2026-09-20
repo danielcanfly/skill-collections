@@ -1,0 +1,12 @@
+{
+  "cgroup_memory": "partial",
+  "heavy_processes": false,
+  "host_pressure": "partial",
+  "kernel_oom": "partial",
+  "oom_killed": true,
+  "process_tree": "partial",
+  "public_health": "hook",
+  "restart_count": true,
+  "runtime": "kubernetes",
+  "swap": "unknown"
+}

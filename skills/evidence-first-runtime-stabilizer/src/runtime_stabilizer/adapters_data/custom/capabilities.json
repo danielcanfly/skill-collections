@@ -1,0 +1,12 @@
+{
+  "cgroup_memory": "unknown",
+  "heavy_processes": "unknown",
+  "host_pressure": "unknown",
+  "kernel_oom": "unknown",
+  "oom_killed": "unknown",
+  "process_tree": "unknown",
+  "public_health": "unknown",
+  "restart_count": "unknown",
+  "runtime": "custom",
+  "swap": "unknown"
+}

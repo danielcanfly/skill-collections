@@ -1,0 +1,32 @@
+[runtime]
+adapter = "docker-linux"
+# For a project-owned adapter, set adapter="custom" and point to a directory
+# containing capabilities.json plus preflight.sh / collect.sh / soak.sh.
+# adapter_path = "../my-adapter"
+target = "my-service"
+health_url = "http://127.0.0.1:8080/health"
+
+[soak]
+samples = 61
+interval_seconds = 60
+minimum_seconds = 3600
+require_heavy_cycle = true
+
+[policy]
+require_authority_snapshot = false
+required_signals = ["restart_count", "oom_killed"]
+# By default a capability marked "partial" does NOT satisfy a required signal.
+allow_partial_required_signals = false
+
+[hooks]
+# Leave hooks blank until configured for the target application.
+# Relative command paths resolve from this TOML file's directory.
+# Hook arguments are available as RS_HOOK_ARG_0, RS_HOOK_ARG_1, ...
+rollback_snapshot = ""
+cleanup_census = ""
+regression = ""
+resource_qualification = ""
+deploy = ""
+production_probe = ""
+rollback = ""
+authority_snapshot = ""

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "RUNNING",
+        "PENDING"
+      ]
+    }
+  },
+  "required": [
+    "phase",
+    "status",
+    "captured_at"
+  ],
+  "type": "object"
+}

@@ -1,59 +1,49 @@
-# Evidence-First Runtime Stabilizer Skill
+# Evidence-First Production Runtime Stabilization Skill v2
 
-Use this skill for runtime incidents involving OOM kills, swap thrashing, restart loops, slow operator/admin reads, heavy worker overlap, or unclear production degradation.
+## Goal
 
-## Operating principle
+Guide an AI agent through a production runtime incident with machine-enforced phase order and explicit safety blockers.
 
-Preserve evidence before cleanup. Distinguish the final trigger from the structural defect. Do not declare closure from tests alone; verify the deployed production runtime.
+## Core phases
 
-## Default mode
+P0_PREFLIGHT → P1_EVIDENCE_CAPTURED → P2_TIMELINE_BUILT → P3_ROOT_CAUSE_QUALIFIED → P4_ROLLBACK_READY → P5_CLEANUP_QUALIFIED → P6_REPAIR_CANDIDATE_READY → P7_REGRESSION_PASS → P8_RESOURCE_QUALIFICATION_PASS → P9_DEPLOY_READY → P10_PRODUCTION_VALIDATED → P11_FINAL_SOAK_PASS → P12_AUTHORITY_CHECK_PASS → P13_CLOSURE_PASS.
 
-Start in read-only mode. Mutation steps require explicit authorization and compatible hooks.
+Use `runtime-stabilizer run-next --incident <dir>` repeatedly. A phase is never skipped because it is inconvenient.
 
-## State machine
+## Evidence and uncertainty
 
-1. `P0_PREFLIGHT`
-2. `P1_EVIDENCE_CAPTURED`
-3. `P2_TIMELINE_BUILT`
-4. `P3_ROOT_CAUSE_CLASSIFIED`
-5. `P4_ROLLBACK_READY`
-6. `P5_CLEANUP_CENSUS`
-7. `P6_REPAIR_PLAN`
-8. `P7_REGRESSION_PASS`
-9. `P8_RESOURCE_QUALIFICATION_PASS`
-10. `P9_DEPLOY_READY`
-11. `P10_PRODUCTION_VALIDATED`
-12. `P11_SOAK_PASS`
-13. `P12_AUTHORITY_UNCHANGED`
-14. `P13_CLOSURE_PASS`
+Preserve evidence before restart/cleanup. Reconstruct when pressure/latency began. Record `FINAL_TRIGGER` separately from `STRUCTURAL_DEFECT`. Trigger confidence must be PROVEN/HIGH/MEDIUM/LOW/UNKNOWN. A generic diagnosis is only a draft until adjudicated.
 
-## Hard-stop conditions
+## Capabilities
 
-Stop and require human review when any of these occur:
+Every adapter publishes capabilities such as kernel OOM visibility, restart count, cgroup memory, swap, process tree, and health. Missing capability is `unknown`; evaluators must not convert it to a successful zero.
 
-- evidence capture fails
-- rollback anchor is missing
-- production authority drifts unexpectedly
-- candidate image digest does not match the deploy receipt
-- authenticated production probe is unavailable when required
-- secret scan fails
-- soak observes OOM, restart, failed health, non-recovering swap, or stuck heavy workers
-- cleanup would delete data without a prior census and explicit approval
+## Repair
 
-## Required closure evidence
+Prefer workload-shape repair over symptom masking. Examples include bounded concurrency, short-lived worker isolation, single-flight, materialized snapshots, stale-while-revalidate, backpressure, timeouts, queue limits, and correct cache/authority boundaries.
 
-A valid closure must include:
+Application repair remains AI/application-specific and must produce a candidate receipt with exact revision/artifact/digest.
 
-- final commit or artifact identity
-- runtime image or deploy identity
-- pre/post authority comparison
-- successful production health checks
-- authenticated operator/API probe when applicable
-- resource qualification receipt
-- soak monitor receipt
-- rollback receipt
-- final closure receipt
+## Validation
 
-## Public package
+The exact candidate must pass regression and realistic resource qualification. Production deploy requires an immutable rollback target, a pre-deploy authority snapshot when configured, and explicit incident-bound authorization.
 
-This catalog entry corresponds to the generated Public v3 package recorded in `PACKAGE.md`.
+Immediate validation failure should invoke a configured rollback hook.
+
+## Soak
+
+Final soak telemetry is JSONL. Require real elapsed time, runtime health/restart/OOM checks, pressure metrics available from the adapter, real workload/heavy-cycle evidence when relevant, and recovery from peaks. A quiet idle hour is not enough for a repair aimed at expensive background work.
+
+## Privacy
+
+Create two evidence classes:
+- private raw forensic bundle;
+- redacted, secret-scanned shareable bundle.
+
+Binary evidence is not considered safely redacted merely because text files passed regex replacement.
+
+## Closure
+
+Closure requires final artifact identity, validation, soak, authority comparison when configured, rollback availability, and a closure receipt.
+
+If a required capability or hook is unavailable, close as BLOCKED, not PASS.

@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: python -m compileall -q src scripts tests
+      - run: for f in adapters/*/*.sh hooks/*.sh; do bash -n "$f"; done
+      - run: python -m pip wheel --no-deps . -w /tmp/runtime-stabilizer-wheel
+      - run: find . -type d -name __pycache__ -prune -exec rm -rf {} +
+      - run: find . -type f -name '*.pyc' -delete
+      - run: rm -rf build dist .pytest_cache src/*.egg-info
+      - run: python scripts/release_hygiene.py .
+      - run: python scripts/secret_scan.py .

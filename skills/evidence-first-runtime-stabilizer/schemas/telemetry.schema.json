@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "heavy_processes": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "kernel_oom_events": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "oom_killed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "public_health_http": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "public_health_seconds": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "restart_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "running": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "sample": {
+      "type": "integer"
+    },
+    "ts": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ts",
+    "sample"
+  ],
+  "type": "object"
+}

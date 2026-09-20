@@ -1,0 +1,12 @@
+{
+  "cgroup_memory": "partial",
+  "heavy_processes": false,
+  "host_pressure": true,
+  "kernel_oom": true,
+  "oom_killed": "partial",
+  "process_tree": true,
+  "public_health": true,
+  "restart_count": "partial",
+  "runtime": "systemd-linux",
+  "swap": true
+}

@@ -1,26 +1,15 @@
 # skill-collections
 
-A public collection of reusable AI skills, agent workflows, and operational runbooks.
-
-This repository is organized as a catalog. Each skill lives under `skills/<skill-name>/` with its own README, status, usage notes, and source package.
+A collection of reusable AI skills, agent workflows, and operational runbooks.
 
 ## Skills
 
-| Skill | Status | Purpose |
+| Skill | Status | Description |
 |---|---|---|
-| [`evidence-first-runtime-stabilizer`](skills/evidence-first-runtime-stabilizer/) | Beta | Evidence-first runtime incident stabilization for Linux services, with adapters, hooks, JSONL telemetry, redaction, state machine, and soak validation. |
+| [Evidence-First Runtime Stabilizer](skills/evidence-first-runtime-stabilizer/) | Beta | Evidence-first runtime incident stabilizer for Linux services. Defaults to read-only evidence capture; mutation, deployment, rollback and application repair require explicit hooks and authorization. |
 
-## Repository conventions
+## Repository policy
 
-Each skill directory should include:
-
-- `README.md` for humans
-- `SKILL.md` for AI agents
-- `STATUS.md` or validation notes
-- `docs/` for longer explanations
-- `src/`, `scripts/`, `adapters/`, or `hooks/` when the skill includes executable tooling
-- privacy and safety notes when the skill touches production systems, credentials, evidence, logs, or user data
-
-## Current import status
-
-The first catalog entry is **Evidence-First Runtime Stabilizer Public v3.0.0**. Its package checksum is recorded in `skills/evidence-first-runtime-stabilizer/PACKAGE.md`.
+- Keep each skill self-contained under `skills/<skill-name>/`.
+- Do not commit private production evidence, credentials, tokens, `.env` files, or raw incident bundles.
+- Public skills should include clear status, safety boundaries, validation instructions, and release notes.

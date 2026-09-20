@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Stabilizer Incident State",
+  "type": "object",
+  "required": ["schema_version", "incident_id", "created_at", "updated_at", "phases", "artifacts"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "incident_id": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "artifacts": {"type": "object"},
+    "phases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status"],
+        "properties": {
+          "status": {"enum": ["PENDING", "RUNNING", "PASS", "FAIL", "BLOCKED"]},
+          "updated_at": {"type": ["string", "null"]},
+          "reason": {"type": ["string", "null"]},
+          "receipt": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
