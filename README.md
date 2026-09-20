@@ -7,6 +7,7 @@ A collection of reusable AI skills, agent workflows, and operational runbooks.
 | Skill | Status | Description |
 |---|---|---|
 | [Evidence-First Runtime Stabilizer](skills/evidence-first-runtime-stabilizer/) | Public Beta | Core workflow, CLI, schemas, fixtures, privacy gates and adapters are usable today. Defaults to read-only evidence capture; deployment, rollback and application repair require explicit hooks and authorization. |
+| [Job Skills Gateway](skills/job-skills-gateway/) | Deprecated | Legacy job-skills gateway preserved for reference; not recommended for new integrations. |
 
 ## Repository policy
 

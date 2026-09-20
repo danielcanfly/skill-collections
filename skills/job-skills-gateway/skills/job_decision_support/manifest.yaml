@@ -1,0 +1,85 @@
+name: job_decision_support
+version: 1.0.0
+status: draft
+owner: Daniel
+description: Produce a decision-useful output for a specific job, including fit analysis, application support, or interview preparation.
+entrypoint_type: skill
+public: true
+
+intent_signals:
+  - analyze job
+  - worth applying
+  - application pack
+  - interview brief
+  - 值不值得投
+  - 幫我分析這份職缺
+  - 幫我準備投遞包
+  - 幫我準備面試
+
+allowed_task_types:
+  - analyze_job
+  - generate_application_pack
+  - prepare_interview_brief
+
+allowed_backend_tools:
+  - v2_tool_generate_job_output
+
+internal_dependencies:
+  - v2_helper_resolve_job_reference
+
+required_context:
+  - request_id
+  - session_id
+  - trace_id
+
+input_schema:
+  type: object
+  properties:
+    user_message_raw:
+      type: string
+    task_type:
+      type: string
+      enum:
+        - analyze_job
+        - generate_application_pack
+        - prepare_interview_brief
+    target_job_id:
+      type: string
+      nullable: true
+    target_company:
+      type: string
+      nullable: true
+    target_title:
+      type: string
+      nullable: true
+
+execution_policy:
+  mode: deterministic_with_internal_resolution
+  sequence:
+    - call: v2_tool_generate_job_output
+
+output_contract:
+  summary_fields:
+    - task_type
+    - query_mode
+    - matched_count
+    - dependency_status
+    - blocked_reason
+    - qdrant_cv_limit
+  include_prompt_artifacts: false
+
+guardrails:
+  - Do not accept unsupported task types.
+  - A missing or ambiguous job reference is a blocking condition, not a guess.
+  - Do not invent company research or JD facts.
+  - Keep internal helper usage hidden from the public skill surface.
+
+fallbacks:
+  - if_missing_job_reference:
+      behavior: blocked
+  - if_multiple_matches:
+      behavior: blocked
+  - if_invalid_task_type:
+      behavior: blocked
+  - if_invalid_context:
+      behavior: fail

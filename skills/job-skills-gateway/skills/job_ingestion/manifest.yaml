@@ -1,0 +1,82 @@
+name: job_ingestion
+version: 1.1.0
+status: draft
+owner: Daniel
+description: Refresh the candidate job pool by fetching recent jobs and scoring only newly inserted items.
+entrypoint_type: skill
+public: true
+
+intent_signals:
+  - fetch recent jobs
+  - update recent jobs
+  - refresh job pool
+  - ingest jobs from JobStreet
+  - 抓最近職缺
+  - 更新職缺池
+  - 刷新最新職缺
+  - 抓 JobStreet 職缺
+
+allowed_task_types:
+  - fetch_recent_jobs
+
+allowed_backend_tools:
+  - v2_tool_fetch_recent_jobs
+  - v2_tool_bulk_score_new_jobs
+
+required_context:
+  - request_id
+  - session_id
+  - trace_id
+
+input_schema:
+  type: object
+  properties:
+    source_site:
+      type: string
+      default: jobstreet
+    role_keyword:
+      type: string
+      nullable: true
+    days:
+      type: integer
+      default: 3
+    page_from:
+      type: integer
+      default: 1
+    page_to:
+      type: integer
+      default: 3
+    force_rescore:
+      type: boolean
+      default: false
+
+execution_policy:
+  mode: deterministic
+  sequence:
+    - call: v2_tool_fetch_recent_jobs
+    - when: inserted_count > 0 or explicit_rescore_requested
+      call: v2_tool_bulk_score_new_jobs
+
+output_contract:
+  summary_fields:
+    - inserted_count
+    - total_extracted_count
+    - deduped_count
+    - zero_result_pages
+    - scored_count
+  include_primary_job_id: true
+
+guardrails:
+  - Do not use this skill for score-only requests against jobs already stored in the sheet.
+  - Do not claim that jobs were scored unless the scoring tool actually ran.
+  - Do not invent inserted_count or scored_count.
+  - Treat missing request context as a hard failure.
+  - Keep backend secrets out of the skill layer.
+
+fallbacks:
+  - if_fetch_returns_zero_inserts:
+      behavior: complete_without_scoring
+  - if_fetch_context_invalid:
+      behavior: fail
+  - if_scoring_returns_zero:
+      behavior: complete_with_note

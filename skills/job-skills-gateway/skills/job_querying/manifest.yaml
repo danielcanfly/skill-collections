@@ -1,0 +1,85 @@
+name: job_querying
+version: 1.0.0
+status: draft
+owner: Daniel
+description: Retrieve, filter, and rank jobs already stored in the job pool.
+entrypoint_type: skill
+public: true
+
+intent_signals:
+  - query jobs
+  - filter jobs
+  - shortlist jobs
+  - top k jobs
+  - 80 分以上職缺
+  - 篩選職缺
+  - 列出 shortlist
+  - 找高分職缺
+
+allowed_task_types:
+  - query_jobs
+
+allowed_backend_tools:
+  - v2_tool_query_jobs
+
+required_context:
+  - request_id
+  - session_id
+  - trace_id
+
+input_schema:
+  type: object
+  properties:
+    days:
+      type: integer
+      nullable: true
+    job_status_filter:
+      type: string
+      nullable: true
+    min_score:
+      type: number
+      nullable: true
+    keyword_query:
+      type: string
+      nullable: true
+    top_k:
+      type: integer
+      nullable: true
+    sort_by:
+      type: string
+      enum:
+        - posted_at
+        - score
+        - title
+        - company
+    sort_order:
+      type: string
+      enum:
+        - asc
+        - desc
+
+execution_policy:
+  mode: deterministic
+  sequence:
+    - call: v2_tool_query_jobs
+
+output_contract:
+  summary_fields:
+    - count
+    - matched_count
+    - relevant_count
+    - primary_job_id
+    - job_ids
+  include_jobs_array: true
+
+guardrails:
+  - Do not invent filters not present in query_spec.
+  - Preserve the distinction between zero results and invalid request context.
+  - Keep ranking semantics faithful to the backend output.
+  - Do not claim a job is relevant unless the backend says so.
+
+fallbacks:
+  - if_zero_results:
+      behavior: complete_with_empty_list
+  - if_invalid_context:
+      behavior: fail
