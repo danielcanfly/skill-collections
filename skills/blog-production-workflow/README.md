@@ -8,7 +8,7 @@ It covers roadmap planning, research, editorial planning, article architecture, 
 
 ## Start here
 
-1. Download and extract `BLOG_PRODUCTION_WORKFLOW_11_PLUS_1_PUBLIC_v1.0.0-beta2.zip`.
+1. Download and extract `BLOG_PRODUCTION_WORKFLOW_11_PLUS_1_PUBLIC_v1.0.0-beta3.zip`.
 2. Read `00_START_HERE.md` and `GETTING_STARTED.md`.
 3. Complete `SETUP_WORKBOOK.md`.
 4. Fill the publication, editorial, visual, repository, deployment, and voice profiles for your own publication.
@@ -19,24 +19,23 @@ The public edition does not depend on the original author's private blog configu
 
 ## Qualification
 
-Public Beta2 passed the independent qualification program after the Beta1 findings were repaired:
+Public Beta2 completed the full independent qualification after the Beta1 repair round. Public Beta3 is a licensing-only rebuild and reran the behavioral suites after adding Apache-2.0 licensing to every nested Skill package:
 
-- 12 / 12 skill packages passed
-- 51 package tests passed
-- 17 hostile public-regression tests passed
+- 12 / 12 skill packages carry Apache License 2.0
+- 51 / 51 package tests passed
+- 17 / 17 hostile public-regression tests passed
 - 68 executable tests total
-- 16 / 16 static distributable checks passed
-- final packaged ZIP was revalidated after sealing
-- private-production residue scan reported no known residual owner-specific configuration
+- nested manifests and SHA256 inventories were regenerated and verified
+- final outer ZIP was re-extracted and matched the sealed source 61 / 61 files
 
-See `QUALIFICATION_SUMMARY.md` and the full report inside the distribution ZIP.
+See `QUALIFICATION_SUMMARY.md` and the qualification records inside the distribution ZIP.
 
 ## Integrity
 
 Distribution SHA-256:
 
-`2664c0c5093a296b55fcbf4155da3fe7cdc3191c3a23000cd847bc96f18c0b8e`
+`679a9e05187b21e84182f62507992a5efd857f1c4763c46bafbf6a90b8a7e94a`
 
 ## License
 
-MIT. See `LICENSE`.
+Apache License 2.0. See `LICENSE`.

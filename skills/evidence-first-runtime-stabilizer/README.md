@@ -46,3 +46,7 @@ Most real incidents block at root-cause adjudication or repair candidate creatio
 6. Shareable bundles must be redacted and secret-scanned.
 
 See `docs/QUICKSTART.md` and `docs/AUTONOMY.md`.
+
+## License
+
+Apache License 2.0. See `LICENSE`.

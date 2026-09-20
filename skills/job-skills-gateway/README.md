@@ -93,3 +93,7 @@ The Make blueprints already behave like stable execution contracts. This repo ke
 - The current Make blueprints should be treated as backend execution tools, not as skills.
 - Secrets should not be copied into skill files. Some existing blueprints contain hard-coded authorization headers and should be cleaned before production rollout.
 - The MCP tool descriptions in `server.py` must stay aligned with the skill files, because runtime tool selection depends more on exposed tool descriptions than on passive markdown files sitting on disk.
+
+## License
+
+This archived snapshot in `skill-collections` is distributed under the Apache License 2.0. See `LICENSE`.

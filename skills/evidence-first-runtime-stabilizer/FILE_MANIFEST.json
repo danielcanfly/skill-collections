@@ -32,14 +32,14 @@
       "sha256": "da790c56f6074a57867fbe77ba8f77a9f6ccae03b48e976e961072e59b5d0857"
     },
     {
-      "bytes": 1069,
+      "bytes": 10280,
       "path": "LICENSE",
-      "sha256": "72380798af61d6131287b0dd3c8dc5345535df641002fece3a02d7ef109c5f8e"
+      "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
     },
     {
-      "bytes": 2161,
+      "bytes": 2423,
       "path": "README.md",
-      "sha256": "8aadf3a6b7b166e958eca34a97c84959dda709cfdea5ef4e0d94884d17134ec2"
+      "sha256": "8927bf35181c7df7f34885567995aa302a12c5b5adbd7c0047c85f0edf24e1d6"
     },
     {
       "bytes": 887,
@@ -242,9 +242,9 @@
       "sha256": "88e143dc6f8786bfdf122acafc5991dc79c7c66e5e5a08b656391c9eb5842b03"
     },
     {
-      "bytes": 864,
+      "bytes": 883,
       "path": "pyproject.toml",
-      "sha256": "d95a46b2c6d8c9dd9a16fb84ad6fddff02e4dbae7af55717dda8913594e74f10"
+      "sha256": "82fdd90bfb810f35fc737283d39be2ed50083db115772a619fb0b6c8a956969a"
     },
     {
       "bytes": 204,
