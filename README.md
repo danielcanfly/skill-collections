@@ -10,6 +10,12 @@ A collection of reusable AI skills, agent workflows, and operational runbooks.
 | [Job Skills Gateway](skills/job-skills-gateway/) | Deprecated | Apache-2.0 | Legacy job-skills gateway preserved for reference; not recommended for new integrations. |
 | [Blog Production Workflow](skills/blog-production-workflow/) | Public Beta | Apache-2.0 | Profile-driven 11+1 editorial workflow with setup contracts, research/drafting/repair/visual/release stages, hardened handoff validation, and independent qualification. |
 
+## Related Projects
+
+| Project | Location | Description |
+|---|---|---|
+| Jobs Scraper | [danielcanfly/jobs-scraper](https://github.com/danielcanfly/jobs-scraper) | LinkedIn-only job search and tracking toolkit with CLI, local MCP server, Agent Skill, and optional Google Sheet workflow. Maintained in its own repository and not bundled into this collection. |
+
 ## License policy
 
 Current repository contents are licensed under the Apache License 2.0 unless a nested `LICENSE` states otherwise. Each skill keeps its own `LICENSE` so it remains self-contained when copied or redistributed.
