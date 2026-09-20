@@ -1,6 +1,8 @@
 # Project Status
 
-This project is a beta release candidate.
+Status: **Public Beta**.
+
+The core workflow, CLI, schemas, fixtures, privacy gates and adapters are usable today. It defaults to read-only evidence capture. Deployment, rollback and application repair require explicit user-provided hooks and authorization.
 
 Mature:
 

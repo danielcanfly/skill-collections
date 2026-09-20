@@ -1,6 +1,8 @@
 # Evidence-First Runtime Stabilizer v3.0.0
 
-Status: **GitHub beta release candidate**.
+Status: **Public Beta**.
+
+The core workflow, CLI, schemas, fixtures, privacy gates and adapters are usable today. It defaults to read-only evidence capture. Deployment, rollback and application repair require explicit user-provided hooks and authorization.
 
 Evidence-First Runtime Stabilizer is a CLI and agent skill for production runtime incidents: OOM, swap thrash, restart loops, slow operator reads, and heavy-worker overlap. It is designed for AI-assisted incident response, but it deliberately defaults to read-only evidence capture and explicit gates before cleanup, deployment or rollback.
 

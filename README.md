@@ -6,7 +6,7 @@ A collection of reusable AI skills, agent workflows, and operational runbooks.
 
 | Skill | Status | Description |
 |---|---|---|
-| [Evidence-First Runtime Stabilizer](skills/evidence-first-runtime-stabilizer/) | Beta | Evidence-first runtime incident stabilizer for Linux services. Defaults to read-only evidence capture; mutation, deployment, rollback and application repair require explicit hooks and authorization. |
+| [Evidence-First Runtime Stabilizer](skills/evidence-first-runtime-stabilizer/) | Public Beta | Core workflow, CLI, schemas, fixtures, privacy gates and adapters are usable today. Defaults to read-only evidence capture; deployment, rollback and application repair require explicit hooks and authorization. |
 
 ## Repository policy
 
