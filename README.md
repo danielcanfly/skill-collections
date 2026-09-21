@@ -10,6 +10,7 @@ A collection of reusable AI skills, agent workflows, and operational runbooks.
 | [Job Skills Gateway](skills/job-skills-gateway/) | Deprecated | Apache-2.0 | Legacy job-skills gateway preserved for reference; not recommended for new integrations. |
 | [Blog Production Workflow](skills/blog-production-workflow/) | Public Beta | Apache-2.0 | Profile-driven 11+1 editorial workflow with setup contracts, research/drafting/repair/visual/release stages, hardened handoff validation, and independent qualification. |
 | [Universal Research OS](skills/universal-research-os/) | Public Release | Apache-2.0 | Proof-carrying research orchestration and independent audit system for source-first construction, admission, bounded repair, global reconciliation, and production release. |
+| [Topic to Textbook](skills/topic-to-textbook/) | Public Release | Apache-2.0 | Universal topic-to-textbook workflow with autonomous research, curriculum triangulation, lesson-first construction, evidence provenance, executable validation, assessment alignment, publication QA, and refresh/revision controls. |
 
 ## Related Projects
 

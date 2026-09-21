@@ -1,0 +1,7 @@
+{
+  "prompt": "把這本舊教材更新到目前版本，只重驗受影響的章節。",
+  "expected_mode": "REFRESH_OR_REVISION",
+  "requires_revision_impact": true,
+  "requires_new_freeze_if_volatile_changed": true,
+  "must_not_blind_rebuild": true
+}

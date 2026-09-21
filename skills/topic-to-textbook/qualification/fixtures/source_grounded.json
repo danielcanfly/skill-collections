@@ -1,0 +1,7 @@
+{
+  "prompt": "把這個 handoff 做成教材，不要改掉來源的課程範圍。",
+  "expected_mode": "SOURCE_GROUNDED_EXPANSION",
+  "source_is_authoritative": true,
+  "must_preserve_source_terminology": true,
+  "must_not_silently_replace_source": true
+}

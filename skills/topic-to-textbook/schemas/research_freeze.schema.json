@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Freeze Manifest",
+  "type": "object",
+  "required": ["freeze_id", "run_id", "temporal_cutoff", "status", "sources"],
+  "properties": {
+    "freeze_id": {"type": "string", "pattern": "^RF-"},
+    "run_id": {"type": "string", "minLength": 1},
+    "temporal_cutoff": {"type": "string", "minLength": 1},
+    "status": {"enum": ["DRAFT", "ACCEPTED", "SUPERSEDED"]},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "identifier", "accessed", "freshness", "claim_ids"],
+        "properties": {
+          "source_id": {"type": "string", "pattern": "^SRC-[0-9]{3,}$"},
+          "identifier": {"type": "string", "minLength": 1},
+          "accessed": {"type": "string", "minLength": 1},
+          "freshness": {"enum": ["STABLE", "VERSION_SENSITIVE", "TIME_SENSITIVE", "CONTESTED"]},
+          "claim_ids": {"type": "array", "items": {"type": "string", "pattern": "^CLM-[0-9]{3,}$"}}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
