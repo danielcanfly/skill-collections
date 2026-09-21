@@ -1,0 +1,37 @@
+{
+  "concept_globs": [
+    "**/canonical/**/*.md",
+    "**/knowledge/**/*.md"
+  ],
+  "source_globs": [
+    "**/sources/**/*.md",
+    "**/source_notes/**/*.md"
+  ],
+  "claim_registry_globs": [
+    "**/*claim*ledger*.csv",
+    "**/*claim*registry*.csv"
+  ],
+  "case_registry_globs": [
+    "**/*case*registry*.csv",
+    "**/cases/**/*.json"
+  ],
+  "retrieval_globs": [
+    "**/retrieval/**/*test*.json",
+    "**/retrieval/**/*test*.csv"
+  ],
+  "field_aliases": {
+    "local_claim_id": [
+      "claim_id",
+      "id"
+    ],
+    "proposition": [
+      "claim",
+      "statement"
+    ],
+    "local_source_id": [
+      "source_id",
+      "id"
+    ]
+  },
+  "manual_review_required_for_inferred_semantics": true
+}

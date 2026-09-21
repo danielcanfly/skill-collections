@@ -1,0 +1,19 @@
+{
+  "source_identity": "research/source_identity_verification.csv",
+  "source_passages": "research/source_passage_registry.csv",
+  "source_refresh_queue": "research/source_refresh_queue.csv",
+  "claim_clauses": "research/claim_clause_matrix.csv",
+  "edge_entailment": "research/edge_entailment.csv",
+  "domain_compatibility": "research/source_claim_domain_compatibility.csv",
+  "candidate_self_check": "qa/candidate_self_check_receipt.json",
+  "reproduction_contract": "qa/reproduction_contract.json",
+  "production_surface_manifest": "qa/production_surface_manifest.json",
+  "seal_state": "qa/seal_state.json",
+  "contract_lineage": "handoff/contract_lineage.json",
+  "independent_review": "EXTERNAL_ONLY",
+  "production_release_receipt": "PRODUCTION_RELEASE_RECEIPT.json",
+  "audit_package_identity": "AUDIT_PACKAGE_IDENTITY.json",
+  "audit_package_manifest": "manifest.json",
+  "embedded_admission": "independent_audit/inputs/admission_receipt.json",
+  "embedded_independent_review": "independent_audit/inputs/independent_review/INDEPENDENT_SEMANTIC_REVIEW_RECEIPT.json"
+}

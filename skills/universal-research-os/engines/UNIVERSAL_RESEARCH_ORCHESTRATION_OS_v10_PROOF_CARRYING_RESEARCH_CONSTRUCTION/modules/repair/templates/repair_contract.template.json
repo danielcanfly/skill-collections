@@ -1,0 +1,17 @@
+{
+  "repair_id": "",
+  "source_candidate_sha256": "",
+  "expected_output_name": "",
+  "contract_generation": "v7-repair-v4",
+  "class_wide_closure_required": true,
+  "retained_direct_support_full_review_required": true,
+  "independent_reaudit_required": true,
+  "originating_handoff_id": "",
+  "originating_handoff_sha256": "",
+  "finding_ids": [],
+  "allowed_change_rules": [],
+  "immutable_rules": [],
+  "required_cascade_checks": [],
+  "negative_control": "old candidate must fail class-wide closure",
+  "positive_control": "returned candidate must pass admission + independent audit"
+}

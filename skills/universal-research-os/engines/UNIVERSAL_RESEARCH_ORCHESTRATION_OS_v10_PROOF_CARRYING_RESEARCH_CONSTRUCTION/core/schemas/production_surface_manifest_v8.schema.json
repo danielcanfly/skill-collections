@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:universal-research-os:v8:production-surface-manifest",
+  "title": "Production Surface Manifest v8",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "release_stage", "surfaces", "r2_object_plan", "audit_only_roots"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "release_stage": {"enum": ["child_candidate", "child_production_release", "global_production_release"]},
+    "surfaces": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["surface_id", "kind", "root"],
+        "properties": {
+          "surface_id": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["knowledge", "okf", "kos", "r2", "nested-audited-candidate", "release"]},
+          "root": {"type": "string", "minLength": 1, "not": {"pattern": "^(?:/|[A-Za-z]:\\\\)"}}
+        }
+      }
+    },
+    "r2_object_plan": {"type": ["string", "null"]},
+    "audit_only_roots": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  }
+}

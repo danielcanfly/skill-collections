@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:universal-research-os:v8:source-passage-registry-row",
+  "title": "Source Passage Registry Row v8",
+  "type": "object",
+  "required": [
+    "passage_id",
+    "source_id",
+    "passage_type",
+    "excerpt_text",
+    "locator_type",
+    "locator_value",
+    "locator_resolved",
+    "snapshot_path",
+    "snapshot_sha256",
+    "excerpt_sha256",
+    "observed_at",
+    "candidate_reviewer_status",
+    "capture_method",
+    "source_access_level",
+    "production_eligibility"
+  ],
+  "properties": {
+    "passage_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "passage_type": {
+      "enum": [
+        "exact-span",
+        "section",
+        "table",
+        "figure",
+        "official-record",
+        "contextual-unit",
+        "challenge-unit"
+      ]
+    },
+    "excerpt_text": {
+      "type": "string",
+      "minLength": 20
+    },
+    "locator_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator_value": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator_resolved": {
+      "const": "PASS"
+    },
+    "snapshot_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "excerpt_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "observed_at": {
+      "type": "string",
+      "minLength": 4
+    },
+    "candidate_reviewer_status": {
+      "const": "PASS"
+    },
+    "capture_method": {
+      "enum": [
+        "pdf-page-snapshot",
+        "html-section-snapshot",
+        "api-record-snapshot",
+        "dataset-row-snapshot",
+        "filing-section-snapshot",
+        "official-text-snapshot"
+      ]
+    },
+    "source_access_level": {
+      "enum": [
+        "full-text",
+        "section-level",
+        "official-record",
+        "metadata-only",
+        "abstract-only",
+        "preview",
+        "unavailable"
+      ]
+    },
+    "production_eligibility": {
+      "const": "PASS"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "required": [
+    "source_id",
+    "snapshot_path",
+    "snapshot_sha256",
+    "source_identity_status",
+    "production_eligibility"
+  ]
+}

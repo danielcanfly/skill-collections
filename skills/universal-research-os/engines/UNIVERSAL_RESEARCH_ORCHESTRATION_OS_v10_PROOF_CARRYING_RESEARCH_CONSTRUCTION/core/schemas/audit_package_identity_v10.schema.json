@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "audit_os_version",
+    "orchestration_contract",
+    "candidate_sha256"
+  ],
+  "properties": {
+    "audit_os_version": {
+      "const": "6.0.0"
+    },
+    "orchestration_contract": {
+      "const": "v10"
+    },
+    "candidate_sha256": {
+      "type": "string",
+      "minLength": 64
+    }
+  }
+}

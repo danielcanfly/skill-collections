@@ -1,0 +1,6 @@
+{
+  "modules/repair/scripts/create_repair_handoff.py": "v6 compiler with closure/delta/cascade/exact-final acceptance",
+  "modules/dispatcher/scripts/intake_compare_return.py": "modules/control_plane/scripts/intake_admission_gate.py",
+  "candidate/handoff/contract_lineage.json": "required",
+  "HANDOFF_IDENTITY.json": "required in every dispatched package"
+}

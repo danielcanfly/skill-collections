@@ -1,0 +1,50 @@
+{
+  "domain": "EXAMPLE",
+  "release_id": "example-global-v2.0.0",
+  "content_version": "2.0.0",
+  "lifecycle": "GLOBAL_MERGE_READY",
+  "baseline_root": "/absolute/path/to/baseline-kos",
+  "repaired_root": "/absolute/path/to/repaired-kos",
+  "output_dir": "/absolute/path/to/audit-output",
+  "knowledge_globs": ["knowledge/[0-9][0-9]-*/*.md"],
+  "reference_globs": ["knowledge/references/*.md"],
+  "active_statuses": ["production"],
+  "semantic_types": ["Concept", "Pattern", "Checklist"],
+  "semantic_excluded_headings": [
+    "Related Concepts",
+    "Claims",
+    "Citations",
+    "Cases",
+    "Sources",
+    "Evidence Locators",
+    "Semantic evidence seal"
+  ],
+  "claims_csv": "registries/claims/canonical_claim_registry.csv",
+  "bindings_csv": "registries/claims/claim_evidence_binding_registry.csv",
+  "claim_columns": {
+    "claim_id": "global_claim_id",
+    "proposition": "canonical_proposition"
+  },
+  "binding_columns": {
+    "binding_id": "binding_id",
+    "claim_id": "global_claim_id",
+    "source_id": "global_source_id",
+    "concept_id": "global_concept_id",
+    "relation": "support_relation",
+    "evidence_boundary": "evidence_boundary",
+    "locator_type": "locator_type",
+    "source_locator": "source_locator",
+    "package_locator": "package_locator",
+    "verification_status": "verification_status"
+  },
+  "benchmark_json": "retrieval/frozen_auditor_retrieval_test_cases.json",
+  "benchmark_manifest_json": "retrieval/frozen_benchmark_manifest.json",
+  "runner_source": "retrieval/run_frozen_retrieval_benchmark.py",
+  "retrieval_metrics_json": "retrieval/frozen_retrieval_metrics.json",
+  "bundle_paths": [],
+  "authoritative_metadata": {
+    "release_id": "example-global-v2.0.0",
+    "content_version": "2.0.0",
+    "lifecycle": "GLOBAL_MERGE_READY"
+  }
+}

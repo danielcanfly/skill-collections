@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "fresh_extraction_verified": true,
+    "manifest_generated_after_all_receipts": true,
+    "post_manifest_mutations": 0,
+    "sealed_at": "2026-07-16T00:10:00Z",
+    "state": "SEALED"
+  }
+}

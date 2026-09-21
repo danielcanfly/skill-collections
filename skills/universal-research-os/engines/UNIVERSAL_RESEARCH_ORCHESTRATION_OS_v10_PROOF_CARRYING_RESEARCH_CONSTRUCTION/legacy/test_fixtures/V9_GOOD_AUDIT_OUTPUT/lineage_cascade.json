@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "lineage_rows": 1,
+    "nodes_with_active_claims": 1
+  }
+}

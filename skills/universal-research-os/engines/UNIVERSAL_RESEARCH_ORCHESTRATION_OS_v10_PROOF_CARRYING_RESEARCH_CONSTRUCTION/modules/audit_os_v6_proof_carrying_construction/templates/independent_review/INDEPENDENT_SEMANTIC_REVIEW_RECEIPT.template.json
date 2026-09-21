@@ -1,0 +1,23 @@
+{
+  "status": "IN_PROGRESS",
+  "candidate_sha256": "",
+  "auditor_id": "",
+  "auditor_session_id": "",
+  "auditor_role": "INDEPENDENT",
+  "independence_attestation": false,
+  "audit_os_version": "6.0.0",
+  "reviewed_at": "",
+  "all_retained_direct_support_reviewed": false,
+  "retained_direct_support_total": 0,
+  "retained_direct_support_pass": 0,
+  "source_review_total": 0,
+  "source_review_pass": 0,
+  "locator_review_total": 0,
+  "locator_review_pass": 0,
+  "open_p0": 0,
+  "open_p1": 0,
+  "artifacts": {},
+  "topic_risk_review_total": 0,
+  "topic_risk_review_pass": 0,
+  "open_p2": 0
+}

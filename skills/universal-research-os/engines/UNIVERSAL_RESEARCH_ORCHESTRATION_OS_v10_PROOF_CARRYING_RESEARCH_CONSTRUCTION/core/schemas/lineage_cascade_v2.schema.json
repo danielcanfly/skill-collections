@@ -1,0 +1,23 @@
+{
+  "required_columns": [
+    "node_id",
+    "active_claim_ids",
+    "active_source_ids",
+    "context_exception_source_ids",
+    "registry_source_ids",
+    "expected_disposition_source_ids",
+    "node_frontmatter_source_ids",
+    "source_note_reverse_source_ids",
+    "case_source_ids",
+    "source_count",
+    "status",
+    "notes"
+  ],
+  "rules": [
+    "non-empty for all canonical nodes",
+    "active source sets reconcile across all surfaces",
+    "source_count equals unique active sources"
+  ],
+  "schema_version": "2.0.0",
+  "type": "csv"
+}

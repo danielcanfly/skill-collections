@@ -1,0 +1,2 @@
+source_id,identity_verdict,snapshot_sha256,authority_tier,proposition_verified,reviewer_notes
+S001,PASS,1b6f27536c5947d4a20109296d1756b03af07c64bc270167ed47a0f239da660f,primary,PASS,Identity and source proposition independently verified.

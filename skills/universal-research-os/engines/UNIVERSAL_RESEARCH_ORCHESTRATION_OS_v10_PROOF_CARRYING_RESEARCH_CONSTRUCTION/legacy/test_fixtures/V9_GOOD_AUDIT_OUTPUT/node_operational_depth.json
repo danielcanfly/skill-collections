@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "nodes": 1,
+    "shared_boilerplate_clusters": 0,
+    "minimums": {
+      "concepts": 1200,
+      "patterns": 1400,
+      "checklists": 900
+    },
+    "pairwise_threshold": 0.82
+  }
+}

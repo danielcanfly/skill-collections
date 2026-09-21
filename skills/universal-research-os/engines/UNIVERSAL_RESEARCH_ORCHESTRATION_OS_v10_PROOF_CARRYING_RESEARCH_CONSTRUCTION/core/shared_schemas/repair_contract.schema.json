@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "finding_ids",
+    "allowed_change_paths",
+    "immutable_paths",
+    "expected_output_name"
+  ],
+  "properties": {
+    "finding_ids": {
+      "type": "array"
+    },
+    "allowed_change_paths": {
+      "type": "array"
+    },
+    "immutable_paths": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+binding_id,global_claim_id,global_source_id,global_concept_id,support_relation,evidence_boundary,locator_type,source_locator,package_locator,exact_quote,quote_sha256,scope,confidence,verification_status,created_by,notes
+BIND-000001,CLAIM-000001,SRC-000001,CONCEPT-000001,direct_support,VERIFIED_SECTION_LOCATOR,SECTION_HEADING,Section 3.2,registries/source_notes/SRC-000001.md,,,bounded proposition scope,high,VERIFIED,repair-session,

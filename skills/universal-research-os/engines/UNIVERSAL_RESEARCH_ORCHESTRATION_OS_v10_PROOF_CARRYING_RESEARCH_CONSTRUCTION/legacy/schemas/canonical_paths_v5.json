@@ -1,0 +1,24 @@
+{
+  "audit_compatibility": ">=3.0.0,<3.0.0",
+  "audit_os_version": "3.0.0",
+  "canonical_paths": {
+    "edge_entailment": "research/edge_entailment.csv",
+    "lineage": "research/lineage_cascade_register.csv",
+    "manifest": "handoff/file_manifest.json",
+    "manual_audit": "qa/manual_semantic_audit_receipt.json",
+    "seal_state": "qa/seal_state.json",
+    "source_identity": "research/source_identity_verification.csv"
+  },
+  "child_runtime_compatibility": ">=3.0.0,<4.0.0",
+  "child_runtime_version": "3.0.0",
+  "core_schema_version": "5.0.0",
+  "dispatcher_compatibility": ">=5.0.0,<7.0.0",
+  "forbidden_legacy_paths": [
+    "research/provenance_edge_entailment.csv",
+    "qa/SEAL_STATE.json"
+  ],
+  "global_semantic_evidence_seal_version": "1.1.0",
+  "orchestration_os_version": "v5",
+  "orchestration_semver": "5.0.0",
+  "reconciliation_compatibility": ">=5.0.0,<7.0.0"
+}

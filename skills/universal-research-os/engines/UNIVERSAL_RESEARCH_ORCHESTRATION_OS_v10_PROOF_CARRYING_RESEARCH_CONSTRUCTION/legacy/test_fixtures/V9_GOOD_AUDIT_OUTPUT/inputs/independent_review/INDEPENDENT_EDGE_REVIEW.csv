@@ -1,0 +1,2 @@
+edge_id,claim_id,source_id,clause_id,verdict,passage_sha256,locator_resolvable,source_claim_compatibility,unsupported_material_clause,reviewer_notes
+E1,C1,S001,C1.1,PASS,e7eb9dae1c35120d61b159989a6cdb88a4604ebd7514c77dfdcfee8378d97d2f,PASS,PASS,none,Original snapshot and material clause independently verified.

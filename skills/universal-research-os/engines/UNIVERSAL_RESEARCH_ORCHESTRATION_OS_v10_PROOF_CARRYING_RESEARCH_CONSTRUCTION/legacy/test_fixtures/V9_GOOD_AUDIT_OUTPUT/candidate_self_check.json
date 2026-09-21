@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "decision": "CANDIDATE_READY_FOR_INDEPENDENT_AUDIT"
+  }
+}

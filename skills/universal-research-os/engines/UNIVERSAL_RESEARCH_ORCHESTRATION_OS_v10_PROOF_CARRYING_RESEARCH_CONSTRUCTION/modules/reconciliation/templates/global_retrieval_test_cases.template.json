@@ -1,0 +1,14 @@
+[
+  {
+    "test_id": "GRT-0001",
+    "class": "definition",
+    "query": "",
+    "language": "en",
+    "expected_ids": [],
+    "negative_ids": [],
+    "holdout": false,
+    "rationale": "",
+    "mandatory_overlap_group": "",
+    "notes": ""
+  }
+]

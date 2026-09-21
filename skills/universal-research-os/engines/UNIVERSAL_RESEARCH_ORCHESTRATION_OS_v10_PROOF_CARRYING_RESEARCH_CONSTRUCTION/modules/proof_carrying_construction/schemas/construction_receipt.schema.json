@@ -1,0 +1,12 @@
+{
+  "required": [
+    "stage",
+    "status",
+    "candidate_tree_sha256",
+    "population_count",
+    "passed_count",
+    "failed_count",
+    "reviewer_session_id",
+    "completed_at"
+  ]
+}

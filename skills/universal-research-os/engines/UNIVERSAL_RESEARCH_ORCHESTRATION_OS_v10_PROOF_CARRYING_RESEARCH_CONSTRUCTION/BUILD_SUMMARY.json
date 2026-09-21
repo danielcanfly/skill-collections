@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "version": "10.0.0",
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10",
+  "released_at": "2026-07-18T15:59:37Z",
+  "python_compile": "PASS",
+  "python_files": 209,
+  "json_parse": "PASS",
+  "cache_artifacts": 0,
+  "topic_contamination": "PASS",
+  "active_audit_modules": 1,
+  "canonical_validator_parity": "PASS",
+  "large_fixture": {
+    "status": "PASS",
+    "passed": 17,
+    "total": 17,
+    "fixture_claims": 40,
+    "results": [
+      {
+        "test": "good_40_claim_proof_chain",
+        "pass": true
+      },
+      {
+        "test": "reject_overclaim",
+        "pass": true
+      },
+      {
+        "test": "reject_locator",
+        "pass": true
+      },
+      {
+        "test": "reject_zero",
+        "pass": true
+      },
+      {
+        "test": "reject_self_review",
+        "pass": true
+      },
+      {
+        "test": "reject_review_omission",
+        "pass": true
+      },
+      {
+        "test": "sealed_at_runtime",
+        "pass": true
+      },
+      {
+        "test": "retrieval_ranked_ids",
+        "pass": true
+      },
+      {
+        "test": "source_note_depth_in_finalizer",
+        "pass": true
+      },
+      {
+        "test": "external_stage_review_in_finalizer",
+        "pass": true
+      },
+      {
+        "test": "audit_v6",
+        "pass": true
+      },
+      {
+        "test": "global_g8_pending",
+        "pass": true
+      },
+      {
+        "test": "global_upstream_wrapper_revalidation",
+        "pass": true
+      },
+      {
+        "test": "handoff_manifest_strict",
+        "pass": true
+      },
+      {
+        "test": "canonical_validator_parity",
+        "pass": true
+      },
+      {
+        "test": "protected_baseline_tool",
+        "pass": true
+      },
+      {
+        "test": "legacy_migration_no_grandfather",
+        "pass": true
+      }
+    ]
+  },
+  "dispatcher_generation": "PASS",
+  "dispatcher_handoff_validation": "PASS",
+  "dispatcher_collection_validation": "PASS",
+  "research_handoff_compiler": "PASS",
+  "repair_handoff_compiler": "PASS",
+  "handoff_tools_embedded": "PASS",
+  "protected_baseline_required": "PASS",
+  "production_wrapper_revalidation": "PASS",
+  "global_builder": "PASS",
+  "global_duplicate_upstream_rejection": "PASS",
+  "global_g8_external_only": "PASS",
+  "five_surface_exact_manifest": "PASS",
+  "audit_only_surface_leakage": "PASS",
+  "standalone_audit_manifest_files": 55,
+  "standalone_audit_fresh_extraction": "PASS",
+  "standalone_audit_sha256": "73abeddf57edb566b8bff861cc8cabacdbb8ab2dd4e6d039732c78ebfa28b230",
+  "package": "UNIVERSAL_RESEARCH_ORCHESTRATION_OS_v10_PROOF_CARRYING_RESEARCH_CONSTRUCTION",
+  "release_name": "PROOF_CARRYING_RESEARCH_CONSTRUCTION",
+  "systemic_audit_packages_integrated": 9,
+  "standalone_audit_zip": "0.UNIVERSAL_RESEARCH_AUDIT_OS_v6_PROOF_CARRYING_RESEARCH_CONSTRUCTION.zip",
+  "standalone_audit_bytes": 69044,
+  "known_limitation": "Expert semantic judgment remains necessary, but it is now required during source/passage/clause construction and is SHA-bound before claim compilation."
+}

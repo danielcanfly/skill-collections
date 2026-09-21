@@ -1,0 +1,11 @@
+{
+  "source_identity": "research/source_identity_verification.csv",
+  "source_passages": "research/source_passage_registry.csv",
+  "claim_clauses": "research/claim_clause_matrix.csv",
+  "edge_entailment": "research/edge_entailment.csv",
+  "domain_compatibility": "research/source_claim_domain_compatibility.csv",
+  "candidate_self_check": "qa/candidate_self_check_receipt.json",
+  "seal_state": "qa/seal_state.json",
+  "contract_lineage": "handoff/contract_lineage.json",
+  "independent_review": "EXTERNAL_ONLY"
+}

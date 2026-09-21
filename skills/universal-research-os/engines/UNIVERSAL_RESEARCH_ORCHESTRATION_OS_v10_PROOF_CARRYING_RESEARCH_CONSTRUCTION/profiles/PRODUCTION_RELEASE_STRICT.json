@@ -1,0 +1,33 @@
+{
+  "profile_id": "PRODUCTION_RELEASE_STRICT_V4",
+  "profile_version": "10.0.0",
+  "allow_document_level_direct_support": false,
+  "minimum_holdout_ratio": 0.25,
+  "minimum_negative_ratio": 0.25,
+  "node_similarity_threshold": 0.88,
+  "operational_node_similarity_threshold": 0.82,
+  "minimum_node_body_chars": {
+    "concepts": 1800,
+    "patterns": 1800,
+    "checklists": 1200
+  },
+  "max_shared_paragraph_fraction": 0.1,
+  "require_final_sealed_state": true,
+  "independent_review_required": true,
+  "all_retained_direct_support_review_required": true,
+  "allow_candidate_self_acceptance": false,
+  "allow_missing_admission": false,
+  "direct_support_saturation_threshold": 0.85,
+  "require_topic_risk_independent_review": true,
+  "allow_open_p2": false,
+  "require_all_edges_passage_bound": true,
+  "required_reproduction_commands": [
+    "retrieval",
+    "release-selfcheck"
+  ],
+  "reproduction_timeout_seconds": 240,
+  "require_production_surface_manifest": true,
+  "require_r2_object_plan": true,
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10"
+}

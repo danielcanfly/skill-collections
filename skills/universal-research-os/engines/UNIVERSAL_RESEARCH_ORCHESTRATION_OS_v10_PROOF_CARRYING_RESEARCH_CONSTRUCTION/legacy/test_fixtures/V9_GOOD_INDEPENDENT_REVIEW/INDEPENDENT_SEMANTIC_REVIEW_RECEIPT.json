@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "853e5f0294b73babf366e0c3dba4393be6e500e30680225686a55aa6f726d86c",
+  "auditor_id": "fixture-independent-auditor",
+  "auditor_session_id": "fixture-session-2",
+  "auditor_role": "INDEPENDENT",
+  "independence_attestation": true,
+  "audit_os_version": "6.0.0",
+  "reviewed_at": "2026-07-16T14:01:00Z",
+  "all_retained_direct_support_reviewed": true,
+  "retained_direct_support_total": 1,
+  "retained_direct_support_pass": 1,
+  "source_review_total": 1,
+  "source_review_pass": 1,
+  "locator_review_total": 1,
+  "locator_review_pass": 1,
+  "open_p0": 0,
+  "open_p1": 0,
+  "artifacts": {
+    "INDEPENDENT_EDGE_REVIEW.csv": "369668870901795365425ab62a2f4e78f94032e2d72c711e5dd0f1179ea4b5e4",
+    "INDEPENDENT_SOURCE_REVIEW.csv": "93a30893286445de3de3e86f3851856b8ea2bcfe53dae841c1785a79a5faa089",
+    "INDEPENDENT_LOCATOR_REVIEW.csv": "89c1e6387d88b148d5d4b0aa35668359da01e960e728638fc8a92fc3ce74db73",
+    "INDEPENDENT_TOPIC_RISK_REVIEW.csv": "f9b14245f0837119798ed3b25f2f3907228d3d85d98df93fe1836a02bcaef9c6"
+  },
+  "topic_risk_review_total": 0,
+  "topic_risk_review_pass": 0,
+  "open_p2": 0
+}

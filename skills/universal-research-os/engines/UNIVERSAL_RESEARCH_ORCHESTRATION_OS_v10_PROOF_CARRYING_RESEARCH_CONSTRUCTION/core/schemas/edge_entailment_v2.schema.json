@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "edge_entailment_v2",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "claim_id",
+    "source_id",
+    "support_label",
+    "exact_source_passage",
+    "exact_locator",
+    "supported_subset",
+    "unsupported_remainder",
+    "coverage_ratio",
+    "claim_atomicity",
+    "shared_contextual_concept",
+    "source_passage_function",
+    "claim_context_function",
+    "why_context_not_entailment",
+    "transfer_boundary",
+    "final_disposition",
+    "reviewer_status",
+    "notes"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "claim_id": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "support_label": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "exact_source_passage": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "exact_locator": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "supported_subset": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "unsupported_remainder": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "coverage_ratio": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "claim_atomicity": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "shared_contextual_concept": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "source_passage_function": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "claim_context_function": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "why_context_not_entailment": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "transfer_boundary": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "final_disposition": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "reviewer_status": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "passed": 17,
+  "total": 17,
+  "fixture_claims": 40,
+  "results": [
+    {
+      "test": "good_40_claim_proof_chain",
+      "pass": true
+    },
+    {
+      "test": "reject_overclaim",
+      "pass": true
+    },
+    {
+      "test": "reject_locator",
+      "pass": true
+    },
+    {
+      "test": "reject_zero",
+      "pass": true
+    },
+    {
+      "test": "reject_self_review",
+      "pass": true
+    },
+    {
+      "test": "reject_review_omission",
+      "pass": true
+    },
+    {
+      "test": "sealed_at_runtime",
+      "pass": true
+    },
+    {
+      "test": "retrieval_ranked_ids",
+      "pass": true
+    },
+    {
+      "test": "source_note_depth_in_finalizer",
+      "pass": true
+    },
+    {
+      "test": "external_stage_review_in_finalizer",
+      "pass": true
+    },
+    {
+      "test": "audit_v6",
+      "pass": true
+    },
+    {
+      "test": "global_g8_pending",
+      "pass": true
+    },
+    {
+      "test": "global_upstream_wrapper_revalidation",
+      "pass": true
+    },
+    {
+      "test": "handoff_manifest_strict",
+      "pass": true
+    },
+    {
+      "test": "canonical_validator_parity",
+      "pass": true
+    },
+    {
+      "test": "protected_baseline_tool",
+      "pass": true
+    },
+    {
+      "test": "legacy_migration_no_grandfather",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "active_atomic_edges": 1,
+    "passage_bound_edges": 1,
+    "direct": 1,
+    "partial": 0,
+    "contextual": 0,
+    "challenge": 0
+  }
+}

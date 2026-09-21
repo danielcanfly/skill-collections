@@ -1,0 +1,18 @@
+{
+  "orchestration_os": "10.0.0",
+  "audit_os": "6.0.0",
+  "contract_generation": "v10",
+  "canonical_audit_module": "modules/audit_os_v6_proof_carrying_construction",
+  "canonical_validator_module": "core/canonical_validators_v10",
+  "proof_carrying_construction_required": true,
+  "source_first_required": true,
+  "stage_independent_pre_review_required": true,
+  "candidate_self_acceptance_forbidden": true,
+  "mandatory_admission": true,
+  "mandatory_external_independent_review": true,
+  "production_promotion_required": true,
+  "global_builder_required": true,
+  "handoff_compiler_required": true,
+  "approved_legacy_migration_required": true,
+  "exact_five_surface_equality_required": true
+}

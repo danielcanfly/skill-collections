@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "active_sources": 2,
+    "identity_rows": 2,
+    "direct_support_sources": 1,
+    "open_source_refresh_rows": 0
+  }
+}

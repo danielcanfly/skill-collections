@@ -1,0 +1,13 @@
+{
+  "from": "7.0.0",
+  "to": "8.0.0",
+  "audit_from": "3.0.0",
+  "audit_to": "4.0.0",
+  "canonical_changes": {
+    "audit_module": "modules/audit_os_v4_production_release_assurance",
+    "production_promotion": "modules/production_release",
+    "global_g8_gate": "modules/reconciliation/scripts/run_g8_production_release_gate.py",
+    "one_command_child_pipeline": "scripts/run_child_production_pipeline.py"
+  },
+  "migration_policy": "REVALIDATE_AND_PROMOTE_NO_GRANDFATHERING"
+}

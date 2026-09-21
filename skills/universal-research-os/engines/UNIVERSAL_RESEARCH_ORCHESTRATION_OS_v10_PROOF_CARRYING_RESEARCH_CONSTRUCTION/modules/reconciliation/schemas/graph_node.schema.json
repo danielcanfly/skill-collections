@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "concept",
+        "claim",
+        "source",
+        "evidence-family",
+        "case",
+        "case-assertion"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

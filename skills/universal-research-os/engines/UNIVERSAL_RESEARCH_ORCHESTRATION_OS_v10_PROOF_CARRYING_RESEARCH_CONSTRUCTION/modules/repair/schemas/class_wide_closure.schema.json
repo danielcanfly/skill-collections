@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Canonical rows live under finding_closure_matrix.json#/findings.",
+  "type": "object",
+  "required": ["finding_id", "failure_class", "population_selector", "closure_scope", "expected_population_count", "review_all_retained_direct_support", "population_command", "closure_command"],
+  "properties": {
+    "closure_scope": {"const": "CLASS_WIDE"},
+    "review_all_retained_direct_support": {"const": true},
+    "expected_population_count": {"type": "integer", "minimum": 0},
+    "population_command": {"type": "array", "minItems": 1},
+    "closure_command": {"type": "array", "minItems": 1}
+  }
+}

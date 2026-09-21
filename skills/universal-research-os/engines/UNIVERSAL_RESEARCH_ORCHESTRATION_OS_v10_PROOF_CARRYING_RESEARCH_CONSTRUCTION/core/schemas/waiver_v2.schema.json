@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "waiver_id",
+    "finding_id",
+    "reviewer",
+    "reason",
+    "evidence",
+    "approved_at",
+    "revisit_trigger",
+    "blocks_global_reconciliation"
+  ],
+  "properties": {
+    "waiver_id": {
+      "type": "string"
+    },
+    "finding_id": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "approved_at": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revisit_trigger": {
+      "type": "string"
+    },
+    "blocks_global_reconciliation": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

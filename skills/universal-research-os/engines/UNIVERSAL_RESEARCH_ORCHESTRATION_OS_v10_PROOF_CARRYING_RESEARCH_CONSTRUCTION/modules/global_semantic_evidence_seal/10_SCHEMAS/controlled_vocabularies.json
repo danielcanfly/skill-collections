@@ -1,0 +1,46 @@
+{
+  "support_relation": [
+    "direct_support",
+    "partial_support",
+    "contextual_support",
+    "method_support",
+    "challenge",
+    "contradiction",
+    "bounded_synthesis"
+  ],
+  "evidence_boundary": [
+    "VERIFIED_EXACT_SPAN",
+    "VERIFIED_SECTION_LOCATOR",
+    "VERIFIED_DOCUMENT_LEVEL",
+    "PACKAGE_LINEAGE_ONLY",
+    "BOUNDED_SYNTHESIS",
+    "UNSUPPORTED"
+  ],
+  "locator_type": [
+    "EXACT_QUOTE",
+    "PAGE_PARAGRAPH",
+    "SECTION_HEADING",
+    "DOCUMENT_LEVEL",
+    "PACKAGE_LINEAGE",
+    "NONE"
+  ],
+  "verification_status": [
+    "VERIFIED",
+    "LEGACY_VERIFIED_NO_SPAN",
+    "UNVERIFIED",
+    "ACCESS_LIMITED",
+    "NOT_AVAILABLE"
+  ],
+  "lifecycle": [
+    "BASELINE_FROZEN",
+    "DIAGNOSIS_COMPLETE",
+    "REPAIR_IN_PROGRESS",
+    "REPAIR_VALIDATED",
+    "MERGE_READY",
+    "GLOBAL_MERGE_READY",
+    "PROMOTION_REVIEW_REQUIRED",
+    "PROMOTION_READY",
+    "PROMOTED",
+    "BLOCKED"
+  ]
+}

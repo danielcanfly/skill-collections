@@ -1,0 +1,15 @@
+{
+  "package": "UNIVERSAL_RESEARCH_OS_SKILL",
+  "version": "1.0.1",
+  "packaging_model": "ONE_SKILL_TWO_PRESERVED_ENGINES",
+  "capability_policy": "LOSSLESS_WRAPPER",
+  "orchestration_os": "10.0.0",
+  "audit_os": "6.0.0",
+  "canonical_engine_files_modified": false,
+  "status": "PUBLIC_RELEASE",
+  "public_release_polish": {
+    "openai_agent_metadata": true,
+    "quick_start_and_usage_examples": true,
+    "license": "Apache-2.0"
+  }
+}

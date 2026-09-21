@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "nodes": 1,
+    "threshold": 0.88
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "modules/audit_os_v4_production_release_assurance": "modules/audit_os_v6_proof_carrying_construction",
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10"
+}

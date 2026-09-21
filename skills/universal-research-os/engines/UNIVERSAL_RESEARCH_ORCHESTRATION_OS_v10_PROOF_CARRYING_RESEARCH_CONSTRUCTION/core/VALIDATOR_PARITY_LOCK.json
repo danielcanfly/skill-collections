@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "contract_generation": "v10",
+  "validators": {
+    "common.py": {
+      "core/canonical_validators_v10": "6a022ca03c1667930bed47e126bfad43d44579d05c730bd5d997efcf3542ee76",
+      "modules/proof_carrying_construction/scripts": "6a022ca03c1667930bed47e126bfad43d44579d05c730bd5d997efcf3542ee76",
+      "modules/child_runtime/candidate_qa_scripts": "6a022ca03c1667930bed47e126bfad43d44579d05c730bd5d997efcf3542ee76",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "6a022ca03c1667930bed47e126bfad43d44579d05c730bd5d997efcf3542ee76"
+    },
+    "validate_source_snapshots.py": {
+      "core/canonical_validators_v10": "9a2663242e4f15e509d1ee05c215d734e22623bec4645f19fde0a2cd01134169",
+      "modules/proof_carrying_construction/scripts": "9a2663242e4f15e509d1ee05c215d734e22623bec4645f19fde0a2cd01134169",
+      "modules/child_runtime/candidate_qa_scripts": "9a2663242e4f15e509d1ee05c215d734e22623bec4645f19fde0a2cd01134169",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "9a2663242e4f15e509d1ee05c215d734e22623bec4645f19fde0a2cd01134169"
+    },
+    "validate_external_stage_review.py": {
+      "core/canonical_validators_v10": "22186c802891d47287cf0661a3dc282e0078be3c4186fc825e672a53dd73dadc",
+      "modules/proof_carrying_construction/scripts": "22186c802891d47287cf0661a3dc282e0078be3c4186fc825e672a53dd73dadc",
+      "modules/child_runtime/candidate_qa_scripts": "22186c802891d47287cf0661a3dc282e0078be3c4186fc825e672a53dd73dadc",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "22186c802891d47287cf0661a3dc282e0078be3c4186fc825e672a53dd73dadc"
+    },
+    "validate_passage_stage.py": {
+      "core/canonical_validators_v10": "f02a3e0731291802a570efc5f7f54f2eff6688e061cddb54c166be2e3bf0bcc4",
+      "modules/proof_carrying_construction/scripts": "f02a3e0731291802a570efc5f7f54f2eff6688e061cddb54c166be2e3bf0bcc4",
+      "modules/child_runtime/candidate_qa_scripts": "f02a3e0731291802a570efc5f7f54f2eff6688e061cddb54c166be2e3bf0bcc4",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "f02a3e0731291802a570efc5f7f54f2eff6688e061cddb54c166be2e3bf0bcc4"
+    },
+    "validate_clause_stage.py": {
+      "core/canonical_validators_v10": "068a999dba16513c495038a8948ab51b285864bdc0cc574f31590f47644ac739",
+      "modules/proof_carrying_construction/scripts": "068a999dba16513c495038a8948ab51b285864bdc0cc574f31590f47644ac739",
+      "modules/child_runtime/candidate_qa_scripts": "068a999dba16513c495038a8948ab51b285864bdc0cc574f31590f47644ac739",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "068a999dba16513c495038a8948ab51b285864bdc0cc574f31590f47644ac739"
+    },
+    "validate_proof_chain.py": {
+      "core/canonical_validators_v10": "138c87ad2899f74cf0e049d13a275e333dfeb3fb077574415968502e820352ef",
+      "modules/proof_carrying_construction/scripts": "138c87ad2899f74cf0e049d13a275e333dfeb3fb077574415968502e820352ef",
+      "modules/child_runtime/candidate_qa_scripts": "138c87ad2899f74cf0e049d13a275e333dfeb3fb077574415968502e820352ef",
+      "modules/audit_os_v6_proof_carrying_construction/scripts": "138c87ad2899f74cf0e049d13a275e333dfeb3fb077574415968502e820352ef"
+    }
+  }
+}

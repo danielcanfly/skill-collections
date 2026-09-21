@@ -1,0 +1,49 @@
+{
+  "package": "UNIVERSAL_RESEARCH_OS_SKILL",
+  "version": "1.0.1",
+  "status": "PUBLIC_RELEASE",
+  "packaging_model": "ONE_SKILL_TWO_PRESERVED_ENGINES",
+  "canonical_engines": {
+    "orchestration": {
+      "version": "10.0.0",
+      "root": "engines/UNIVERSAL_RESEARCH_ORCHESTRATION_OS_v10_PROOF_CARRYING_RESEARCH_CONSTRUCTION",
+      "source_zip_sha256": "579500a92581b2fb7f9c7aac5d03ebfc8cdfe2560813ec6c688d52aeef60b2c6"
+    },
+    "audit": {
+      "version": "6.0.0",
+      "root": "engines/UNIVERSAL_RESEARCH_AUDIT_OS_v6_PROOF_CARRYING_RESEARCH_CONSTRUCTION",
+      "source_zip_sha256": "73abeddf57edb566b8bff861cc8cabacdbb8ab2dd4e6d039732c78ebfa28b230"
+    }
+  },
+  "preservation": {
+    "orchestration_and_audit_engine_files": 604,
+    "canonical_engine_files_modified": 0,
+    "standalone_embedded_audit_files_compared": 57,
+    "standalone_embedded_audit_hash_differences": 0,
+    "original_source_zips_included": 2
+  },
+  "wrapper_files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "README.md",
+    "LICENSE",
+    "QUALIFICATION.md",
+    "VERSION.json",
+    "SOURCE_PROVENANCE.json",
+    "PACKAGE_MANIFEST.json",
+    "router/ROUTING.md",
+    "router/INDEPENDENCE_BOUNDARY.md",
+    "scripts/verify_skill_package.py"
+  ],
+  "design_invariants": [
+    "Skill is a thin activation/router layer, not a replacement for either canonical OS.",
+    "Formal independent audit retains a standalone read-only capability surface.",
+    "Canonical engine instructions override wrapper convenience guidance.",
+    "Progressive disclosure is used to reduce context load without deleting capability."
+  ],
+  "public_release": {
+    "openai_agent_metadata": "agents/openai.yaml",
+    "quick_start": "README.md",
+    "license": "Apache-2.0"
+  }
+}

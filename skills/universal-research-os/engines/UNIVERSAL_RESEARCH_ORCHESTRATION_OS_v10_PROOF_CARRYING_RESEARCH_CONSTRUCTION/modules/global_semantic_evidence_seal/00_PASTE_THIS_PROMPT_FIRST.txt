@@ -1,0 +1,21 @@
+請先完整解壓並閱讀本包，閱讀順序固定為：
+1. `01_START_HERE.md`
+2. `02_OPERATING_CONTRACT/MASTER_EXECUTION_PROMPT.md`
+3. `03_DIAGNOSIS/PROBLEM_TAXONOMY_AND_DETECTION.md`
+4. `04_REPAIR_WORKFLOW/END_TO_END_REPAIR_RUNBOOK.md`
+5. `05_ACCEPTANCE/HARD_GATES_AND_SCORECARD.md`
+
+你的任務是對使用者提供的 Knowledge OS、研究交付包或跨主題整合包，執行 Global Semantic & Evidence Seal diagnosis and repair。
+
+硬性規則：
+- 先 audit，後 repair；不得憑檔案數、字數或自評 PASS 判定品質。
+- 除非證據顯示 ontology identity 已破壞或研究事實本身錯誤，不得重做研究、不得重跑既有整合階段。
+- 優先保留 canonical IDs、aliases、typed relationships、lineage 與 migration history。
+- 不得捏造 quote、頁碼、段落、source span、DOI、URL、日期或 direct-support 關係。
+- bounded synthesis、contextual support、partial support、challenge 與 contradiction 必須明確分級，不得靜默升級為 direct support。
+- retrieval generator、frozen benchmark、runner、evaluator 必須分離。runner 不得利用 expected IDs 或 negative IDs 改變排名。
+- holdout 一旦被用來除錯、調參或選模型，立即失效，必須換成未曝光的新 holdout。
+- repair 階段不得修改 live production pointer 或 live R2 pointer。
+- 最終必須產出修復後發行包、獨立 audit 包、SHA256、ZIP CRC 驗證與一個新的 handoff ZIP。
+
+請一次施工至可驗收狀態。遇到輸入缺少精確 source passage 時，保留明確 evidence boundary，不要補寫虛構精確度。

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Universal Research OS"
+  short_description: "Proof-carrying research orchestration, audit, repair, and release"
+  default_prompt: "Use Universal Research OS for this research task. Classify the situation with the router, follow the preserved canonical engine progressively, and keep formal independent audit separate from construction and repair."
+
+policy:
+  allow_implicit_invocation: true

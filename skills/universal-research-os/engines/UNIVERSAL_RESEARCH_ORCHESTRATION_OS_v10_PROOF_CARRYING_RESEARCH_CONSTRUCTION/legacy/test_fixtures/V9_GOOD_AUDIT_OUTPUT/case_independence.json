@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "families": 2,
+    "evidence_backed_cases_checked": 1
+  }
+}

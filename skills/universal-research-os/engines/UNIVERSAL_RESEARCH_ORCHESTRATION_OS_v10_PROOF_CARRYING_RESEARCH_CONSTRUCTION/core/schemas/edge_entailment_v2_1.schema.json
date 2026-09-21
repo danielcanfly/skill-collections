@@ -1,0 +1,49 @@
+{
+  "evidence_boundaries": [
+    "VERIFIED_EXACT_SPAN",
+    "VERIFIED_SECTION_LOCATOR",
+    "VERIFIED_DOCUMENT_LEVEL",
+    "PACKAGE_LINEAGE_ONLY",
+    "BOUNDED_SYNTHESIS",
+    "UNSUPPORTED"
+  ],
+  "passage_types": [
+    "verbatim-quote",
+    "bounded-exact-summary",
+    "section-summary",
+    "document-level-summary"
+  ],
+  "required_columns": [
+    "edge_id",
+    "claim_id",
+    "source_id",
+    "candidate_node",
+    "support_label",
+    "claim_atomicity_status",
+    "passage_type",
+    "evidence_boundary",
+    "exact_source_passage",
+    "exact_locator",
+    "coverage_ratio",
+    "supported_subset",
+    "unsupported_remainder",
+    "shared_contextual_concept",
+    "shared_concept_or_method",
+    "source_passage_function",
+    "claim_context_function",
+    "why_context_not_entailment",
+    "transfer_boundary",
+    "challenge_description",
+    "disposition",
+    "reviewer_status",
+    "notes"
+  ],
+  "rules": [
+    "support coverage=1 and unsupported remainder empty",
+    "partial-support has supported and unsupported subsets",
+    "contextual-support coverage=0 and source-specific relevance",
+    "candidate/source-note circular self-citation forbidden"
+  ],
+  "schema_version": "3.0.0",
+  "type": "csv"
+}

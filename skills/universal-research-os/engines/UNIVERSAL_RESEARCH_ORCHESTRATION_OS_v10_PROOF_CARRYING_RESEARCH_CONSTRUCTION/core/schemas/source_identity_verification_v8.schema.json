@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:universal-research-os:v8:source-identity-verification-row",
+  "title": "Source Identity Verification Row v8",
+  "type": "object",
+  "required": [
+    "source_id",
+    "observed_title",
+    "observed_authors",
+    "responsible_entity",
+    "author_basis",
+    "observed_identifier",
+    "canonical_url",
+    "publication_date",
+    "accessed_at",
+    "date_basis",
+    "access_level",
+    "exact_metadata_locator",
+    "identity_status",
+    "temporal_status",
+    "identity_verdict",
+    "reviewer_status",
+    "production_eligibility"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_authors": {
+      "type": "string",
+      "minLength": 1
+    },
+    "responsible_entity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author_basis": {
+      "enum": [
+        "named-author",
+        "responsible-organisation",
+        "official-issuer",
+        "dataset-owner",
+        "no-named-author-verified"
+      ]
+    },
+    "observed_identifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_url": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publication_date": {
+      "type": "string",
+      "minLength": 4
+    },
+    "effective_or_period_date": {
+      "type": "string"
+    },
+    "accessed_at": {
+      "type": "string",
+      "minLength": 4
+    },
+    "date_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "access_level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exact_metadata_locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity_status": {
+      "const": "PASS"
+    },
+    "temporal_status": {
+      "const": "PASS"
+    },
+    "identity_verdict": {
+      "const": "PASS"
+    },
+    "reviewer_status": {
+      "const": "PASS"
+    },
+    "production_eligibility": {
+      "const": "PASS"
+    }
+  }
+}
