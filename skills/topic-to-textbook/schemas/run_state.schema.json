@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Universal Topic-to-Textbook Run State",
+  "type": "object",
+  "required": [
+    "run_id",
+    "skill_version",
+    "mode",
+    "topic",
+    "current_gate",
+    "gate_status",
+    "open_defects",
+    "completed_lessons"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "skill_version": {
+      "const": "2.1.1"
+    },
+    "mode": {
+      "enum": [
+        "TOPIC_ONLY_AUTONOMOUS",
+        "SOURCE_GROUNDED_EXPANSION",
+        "TRANSCRIPT_TO_TEXTBOOK",
+        "INTERACTIVE_LEARNING_FIRST",
+        "HYBRID",
+        "REFRESH_OR_REVISION"
+      ]
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_gate": {
+      "type": "string",
+      "pattern": "^G([0-9]|1[0-4])$"
+    },
+    "gate_status": {
+      "enum": [
+        "PASS",
+        "PARTIAL",
+        "BLOCKED"
+      ]
+    },
+    "active_research_freeze_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "completed_lessons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^LES-[0-9]{2,}$"
+      }
+    },
+    "open_defects": {
+      "type": "array"
+    },
+    "pending_validations": {
+      "type": "array"
+    },
+    "final_artifact_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "learner_mastery_status": {
+      "enum": [
+        "NOT_ASSESSED",
+        "IN_PROGRESS",
+        "PASSED",
+        "FAILED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

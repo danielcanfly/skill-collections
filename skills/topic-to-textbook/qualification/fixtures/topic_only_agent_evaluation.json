@@ -1,0 +1,9 @@
+{
+  "prompt": "研究 Agent Evaluation，做成教材。",
+  "expected_mode": "TOPIC_ONLY_AUTONOMOUS",
+  "primary_adapter": "AI Agents / MCP / Tooling",
+  "requires_web_research": true,
+  "requires_contested_claim_treatment": true,
+  "requires_challenge_search": true,
+  "requires_research_freeze": true
+}

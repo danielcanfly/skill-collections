@@ -1,0 +1,9 @@
+{
+  "prompt": "幫我做一份 Working Capital 教材。",
+  "expected_mode": "TOPIC_ONLY_AUTONOMOUS",
+  "primary_adapter": "Finance / Accounting / Financial Analysis",
+  "requires_web_research": true,
+  "requires_curriculum_triangulation": true,
+  "requires_research_freeze": true,
+  "must_include_transfer_assessment": true
+}

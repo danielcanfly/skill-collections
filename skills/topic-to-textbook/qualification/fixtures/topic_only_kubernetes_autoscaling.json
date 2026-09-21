@@ -1,0 +1,9 @@
+{
+  "prompt": "幫我把 Kubernetes Autoscaling 做成完整教材。",
+  "expected_mode": "TOPIC_ONLY_AUTONOMOUS",
+  "primary_adapter": "Software / Cloud / Infrastructure / DevTools",
+  "requires_web_research": true,
+  "requires_version_freeze": true,
+  "requires_executable_validation": true,
+  "must_not_force_pm_case": true
+}
