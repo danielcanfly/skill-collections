@@ -1,0 +1,17 @@
+{
+  "audit_standard": "Global Semantic & Evidence Seal Module v1.1",
+  "release_id": "domain-global-vN.N.N",
+  "content_version": "N.N.N",
+  "status": "MERGE_READY|REPAIR_REQUIRED|BLOCKED",
+  "global_lifecycle_status": "GLOBAL_MERGE_READY",
+  "score": 0,
+  "hard_gate_result": "PASS|FAIL",
+  "severity_counts": {"P0": 0, "P1": 0, "P2": 0, "P3": 0},
+  "semantic_summary": {},
+  "evidence_summary": {},
+  "retrieval_summary": {},
+  "mechanical_summary": {},
+  "prohibitions_confirmed": {},
+  "nonblocking_observations": [],
+  "validators_run": []
+}

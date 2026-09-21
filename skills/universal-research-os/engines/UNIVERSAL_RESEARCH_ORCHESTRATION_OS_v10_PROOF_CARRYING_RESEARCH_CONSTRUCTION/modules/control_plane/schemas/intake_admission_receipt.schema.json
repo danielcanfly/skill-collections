@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "classification",
+    "candidate_sha256",
+    "zip_crc",
+    "filename_ok",
+    "lineage_status",
+    "handoff_status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "classification": {
+      "enum": [
+        "V10_NATIVE_ACCEPTED",
+        "LEGACY_MIGRATABLE_ACCEPTED",
+        "SUPERSEDED_HANDOFF_REJECTED",
+        "STALE_ARTIFACT_REJECTED",
+        "UNKNOWN_LINEAGE_REJECTED",
+        "FILENAME_REJECTED",
+        "CRC_REJECTED",
+        "CONTRACT_HASH_REJECTED"
+      ]
+    }
+  }
+}

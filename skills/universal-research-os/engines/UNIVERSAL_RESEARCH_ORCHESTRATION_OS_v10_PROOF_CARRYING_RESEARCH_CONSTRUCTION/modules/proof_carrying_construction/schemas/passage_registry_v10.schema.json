@@ -1,0 +1,13 @@
+{
+  "required": [
+    "passage_id",
+    "source_id",
+    "excerpt_text",
+    "locator_type",
+    "locator_value",
+    "locator_resolved",
+    "snapshot_sha256",
+    "excerpt_sha256",
+    "stage_pre_review_status"
+  ]
+}

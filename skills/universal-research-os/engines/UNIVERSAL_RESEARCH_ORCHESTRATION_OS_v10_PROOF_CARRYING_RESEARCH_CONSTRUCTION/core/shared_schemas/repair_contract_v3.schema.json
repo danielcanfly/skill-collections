@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "repair_id",
+    "source_candidate_sha256",
+    "originating_handoff_id",
+    "originating_handoff_sha256",
+    "expected_output_name",
+    "finding_ids",
+    "allowed_change_rules",
+    "immutable_rules",
+    "required_cascade_checks",
+    "negative_control",
+    "positive_control"
+  ],
+  "properties": {
+    "allowed_change_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path_pattern",
+          "operations"
+        ],
+        "properties": {
+          "path_pattern": {
+            "type": "string"
+          },
+          "operations": {
+            "type": "array"
+          },
+          "file_type": {
+            "type": "string"
+          },
+          "key_columns": {
+            "type": "array"
+          },
+          "allowed_columns": {
+            "type": "array"
+          },
+          "allowed_json_pointers": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "immutable_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path_pattern"
+        ],
+        "properties": {
+          "path_pattern": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "finding_ids": {
+      "type": "array",
+      "minItems": 1
+    },
+    "required_cascade_checks": {
+      "type": "array",
+      "minItems": 1
+    },
+    "negative_control": {
+      "type": "object"
+    },
+    "positive_control": {
+      "type": "object"
+    }
+  }
+}

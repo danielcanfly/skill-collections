@@ -1,0 +1,14 @@
+{
+  "orchestration_zip": {
+    "filename": "0.UNIVERSAL_RESEARCH_ORCHESTRATION_OS_v10_PROOF_CARRYING_RESEARCH_CONSTRUCTION.zip",
+    "sha256": "579500a92581b2fb7f9c7aac5d03ebfc8cdfe2560813ec6c688d52aeef60b2c6"
+  },
+  "audit_zip": {
+    "filename": "0.UNIVERSAL_RESEARCH_AUDIT_OS_v6_PROOF_CARRYING_RESEARCH_CONSTRUCTION.zip",
+    "sha256": "73abeddf57edb566b8bff861cc8cabacdbb8ab2dd4e6d039732c78ebfa28b230"
+  },
+  "notes": [
+    "Canonical extracted engine trees are preserved byte-for-byte from these ZIPs.",
+    "Standalone Audit OS v6 and Orchestration v10 embedded Audit OS v6 were verified identical across all 57 files before packaging."
+  ]
+}

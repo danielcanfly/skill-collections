@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "edge_id",
+    "source_id",
+    "relationship_type",
+    "target_id"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "target_id": {
+      "type": "string"
+    }
+  }
+}

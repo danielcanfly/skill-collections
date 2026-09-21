@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "manifested": 32,
+    "actual": 32,
+    "coverage": 1.0
+  }
+}

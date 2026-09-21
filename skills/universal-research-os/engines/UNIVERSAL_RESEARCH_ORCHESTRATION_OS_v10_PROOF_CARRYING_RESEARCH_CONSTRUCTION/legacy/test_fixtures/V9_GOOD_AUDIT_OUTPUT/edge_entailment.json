@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "active_edges": 1,
+    "direct_support": 1
+  }
+}

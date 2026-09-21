@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "state",
+    "completed"
+  ],
+  "properties": {
+    "state": {
+      "enum": [
+        "CONTENT_COMPLETE",
+        "RECEIPTS_COMPLETE",
+        "MANUAL_AUDIT_COMPLETE",
+        "IDEMPOTENCY_COMPLETE",
+        "MANIFEST_FROZEN",
+        "ZIP_CREATED",
+        "FRESH_EXTRACTION_AUDITED",
+        "SEALED"
+      ]
+    }
+  }
+}

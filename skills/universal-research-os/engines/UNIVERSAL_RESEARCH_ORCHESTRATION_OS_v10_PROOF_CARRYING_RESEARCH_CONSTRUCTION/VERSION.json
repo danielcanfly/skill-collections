@@ -1,0 +1,16 @@
+{
+  "package": "UNIVERSAL_RESEARCH_ORCHESTRATION_OS",
+  "version": "10.0.0",
+  "release_name": "PROOF_CARRYING_RESEARCH_CONSTRUCTION",
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10",
+  "supersedes": [
+    "9.0.0",
+    "8.0.0",
+    "7.0.0",
+    "6.0.0",
+    "5.0.0"
+  ],
+  "status": "PRODUCTION",
+  "released_at": "2026-07-18T15:59:37Z"
+}

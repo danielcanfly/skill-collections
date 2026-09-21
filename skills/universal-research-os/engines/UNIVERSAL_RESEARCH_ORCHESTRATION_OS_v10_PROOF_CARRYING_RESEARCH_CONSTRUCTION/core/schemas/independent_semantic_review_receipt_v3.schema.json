@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "candidate_sha256",
+    "auditor_id",
+    "auditor_session_id",
+    "auditor_role",
+    "independence_attestation",
+    "audit_os_version",
+    "reviewed_at",
+    "all_retained_direct_support_reviewed",
+    "retained_direct_support_total",
+    "retained_direct_support_pass",
+    "open_p0",
+    "open_p1",
+    "artifacts",
+    "source_review_total",
+    "source_review_pass",
+    "locator_review_total",
+    "locator_review_pass",
+    "topic_risk_review_total",
+    "topic_risk_review_pass"
+  ],
+  "properties": {
+    "status": {
+      "const": "PASS"
+    },
+    "auditor_role": {
+      "const": "INDEPENDENT"
+    },
+    "independence_attestation": {
+      "const": true
+    },
+    "audit_os_version": {
+      "const": "3.0.0"
+    },
+    "all_retained_direct_support_reviewed": {
+      "const": true
+    },
+    "open_p0": {
+      "const": 0
+    },
+    "open_p1": {
+      "const": 0
+    },
+    "topic_risk_review_total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "topic_risk_review_pass": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

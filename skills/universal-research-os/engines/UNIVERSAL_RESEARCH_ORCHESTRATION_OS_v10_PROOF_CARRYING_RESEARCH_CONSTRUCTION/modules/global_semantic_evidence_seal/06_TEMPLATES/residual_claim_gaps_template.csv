@@ -1,0 +1,2 @@
+gap_id,global_claim_id,gap_type,severity,current_status,evidence_boundary,required_next_evidence,blocks_release,notes
+GAP-000001,CLAIM-000001,no_exact_span,P2,OPEN_BOUNDED,PACKAGE_LINEAGE_ONLY,verified source passage,false,

@@ -1,0 +1,52 @@
+{
+  "project_code": "EXAMPLE",
+  "project_name": "Example Research Domain",
+  "phase_order": [
+    "01",
+    "02",
+    "03"
+  ],
+  "candidate_glob": "input/final_candidates/*.zip",
+  "phase_code_regex": "(?:^|_)(\\d{2})(?:_|-)",
+  "global_id_rules": {
+    "source": {
+      "prefix": "SRC-G-",
+      "width": 5
+    },
+    "claim": {
+      "prefix": "CLM-G-",
+      "width": 5
+    },
+    "case": {
+      "prefix": "CASE-G-",
+      "width": 5
+    },
+    "evidence_family": {
+      "prefix": "EF-G-",
+      "width": 5
+    }
+  },
+  "canonical_namespaces": [
+    "01-foundations",
+    "02-domain",
+    "12-patterns",
+    "13-checklists"
+  ],
+  "relationship_allowlist": [
+    "is-a",
+    "part-of",
+    "depends-on",
+    "supports",
+    "partial-supports",
+    "challenges",
+    "contextualises",
+    "applies",
+    "illustrates",
+    "broader-than",
+    "narrower-than",
+    "same-proposition-as"
+  ],
+  "retrieval_profile": "REFERENCE_STRICT",
+  "r2_release_prefix": "releases/example/<release_id>/",
+  "final_output_prefix": "EXAMPLE_GLOBAL"
+}

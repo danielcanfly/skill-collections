@@ -1,0 +1,11 @@
+{
+  "required": [
+    "clause_id",
+    "proposed_claim_id",
+    "clause_text",
+    "passage_ids",
+    "support_status",
+    "unsupported_remainder",
+    "external_pre_review_status"
+  ]
+}

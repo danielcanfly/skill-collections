@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:universal-research-os:v4:audit-summary",
+  "title": "Audit OS v4 Exact-Final Summary",
+  "type": "object",
+  "required": [
+    "status",
+    "audit_os_version",
+    "orchestration_contract",
+    "candidate_sha256",
+    "score",
+    "dimension_scores",
+    "findings",
+    "open_p0",
+    "open_p1",
+    "open_p2"
+  ],
+  "properties": {
+    "status": {
+      "const": "MERGE_READY"
+    },
+    "audit_os_version": {
+      "const": "4.0.0"
+    },
+    "orchestration_contract": {
+      "const": "v8"
+    },
+    "candidate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "score": {
+      "const": 100
+    },
+    "dimension_scores": {
+      "type": "object",
+      "required": [
+        "compatibility",
+        "semantic",
+        "retrieval",
+        "seal",
+        "independent_semantic",
+        "production_assurance"
+      ],
+      "properties": {
+        "compatibility": {
+          "const": 100
+        },
+        "semantic": {
+          "const": 100
+        },
+        "retrieval": {
+          "const": 100
+        },
+        "seal": {
+          "const": 100
+        },
+        "independent_semantic": {
+          "const": 100
+        },
+        "production_assurance": {
+          "const": 100
+        }
+      },
+      "additionalProperties": false
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "open_p0": {
+      "const": 0
+    },
+    "open_p1": {
+      "const": 0
+    },
+    "open_p2": {
+      "const": 0
+    },
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

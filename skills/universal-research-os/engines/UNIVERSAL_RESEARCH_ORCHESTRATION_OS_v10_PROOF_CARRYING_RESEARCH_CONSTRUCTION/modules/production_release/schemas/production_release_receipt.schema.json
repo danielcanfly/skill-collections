@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "release_contract",
+    "orchestration_os_version",
+    "audit_os_version",
+    "candidate_filename",
+    "candidate_sha256",
+    "dimension_scores",
+    "open_p0",
+    "open_p1",
+    "open_p2",
+    "live_pointer_updated"
+  ],
+  "properties": {
+    "status": {
+      "const": "AUDITED_PRODUCTION_RELEASE"
+    },
+    "release_contract": {
+      "const": "v10"
+    },
+    "audit_os_version": {
+      "const": "6.0.0"
+    },
+    "candidate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "open_p0": {
+      "const": 0
+    },
+    "open_p1": {
+      "const": 0
+    },
+    "open_p2": {
+      "const": 0
+    },
+    "live_pointer_updated": {
+      "const": false
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "status": "MERGE_READY",
+  "audit_os_version": "6.0.0",
+  "orchestration_contract": "v10",
+  "score": 100,
+  "dimension_scores": {
+    "compatibility": 100,
+    "semantic": 100,
+    "retrieval": 100,
+    "seal": 100,
+    "independent_semantic": 100,
+    "production_assurance": 100
+  },
+  "candidate": "V9_GOOD_CANDIDATE.zip",
+  "candidate_sha256": "853e5f0294b73babf366e0c3dba4393be6e500e30680225686a55aa6f726d86c",
+  "validators": [
+    {
+      "id": "contract_lineage",
+      "dimension": "compatibility",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "contract_lineage.json"
+    },
+    {
+      "id": "source_identity",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "source_identity.json"
+    },
+    {
+      "id": "temporal_metadata",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "temporal_metadata.json"
+    },
+    {
+      "id": "source_passage_registry",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "source_passage_registry.json"
+    },
+    {
+      "id": "claim_clause_matrix",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "claim_clause_matrix.json"
+    },
+    {
+      "id": "edge_entailment",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "edge_entailment.json"
+    },
+    {
+      "id": "cross_domain_compatibility",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "cross_domain_compatibility.json"
+    },
+    {
+      "id": "contextual_relevance",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "contextual_relevance.json"
+    },
+    {
+      "id": "candidate_self_check",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "candidate_self_check.json"
+    },
+    {
+      "id": "retrieval_results",
+      "dimension": "retrieval",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "retrieval_results.json"
+    },
+    {
+      "id": "retrieval_leakage",
+      "dimension": "retrieval",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "retrieval_leakage.json"
+    },
+    {
+      "id": "node_diversity",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "node_diversity.json"
+    },
+    {
+      "id": "lineage_cascade",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "lineage_cascade.json"
+    },
+    {
+      "id": "source_note_depth",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "source_note_depth.json"
+    },
+    {
+      "id": "case_independence",
+      "dimension": "semantic",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "case_independence.json"
+    },
+    {
+      "id": "seal_state",
+      "dimension": "seal",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "seal_state.json"
+    },
+    {
+      "id": "identity_surfaces",
+      "dimension": "compatibility",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "identity_surfaces.json"
+    },
+    {
+      "id": "manifest_strict",
+      "dimension": "seal",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "manifest_strict.json"
+    },
+    {
+      "id": "source_evidence_coverage",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "source_evidence_coverage.json"
+    },
+    {
+      "id": "source_metadata_completeness",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "source_metadata_completeness.json"
+    },
+    {
+      "id": "node_operational_depth",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "node_operational_depth.json"
+    },
+    {
+      "id": "portable_reproducibility",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "portable_reproducibility.json"
+    },
+    {
+      "id": "production_surface_hygiene",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "production_surface_hygiene.json"
+    },
+    {
+      "id": "zero_open_findings",
+      "dimension": "production_assurance",
+      "status": "PASS",
+      "returncode": 0,
+      "result_file": "zero_open_findings.json"
+    }
+  ],
+  "findings": [],
+  "admission_classification": "V9_NATIVE_ACCEPTED",
+  "independent_review_status": "PASS",
+  "independent_auditor_id": "fixture-independent-auditor",
+  "open_p0": 0,
+  "open_p1": 0,
+  "open_p2": 0,
+  "completed_at": "2026-07-16T14:01:00Z"
+}

@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "source_identity_verification_v2",
+  "type": "object",
+  "required": [
+    "source_id",
+    "declared_title",
+    "observed_title",
+    "declared_authors",
+    "observed_authors",
+    "declared_identifier",
+    "observed_identifier",
+    "canonical_url",
+    "publication_date",
+    "effective_or_reporting_date",
+    "accessed_at",
+    "access_level",
+    "metadata_locator",
+    "metadata_excerpt",
+    "verified_proposition",
+    "identity_verdict",
+    "reviewer_status",
+    "notes"
+  ],
+  "properties": {
+    "source_id": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "declared_title": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "observed_title": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "declared_authors": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "observed_authors": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "declared_identifier": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "observed_identifier": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "effective_or_reporting_date": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "accessed_at": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "access_level": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "metadata_locator": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "metadata_excerpt": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "verified_proposition": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "identity_verdict": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "reviewer_status": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "number",
+        "integer",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

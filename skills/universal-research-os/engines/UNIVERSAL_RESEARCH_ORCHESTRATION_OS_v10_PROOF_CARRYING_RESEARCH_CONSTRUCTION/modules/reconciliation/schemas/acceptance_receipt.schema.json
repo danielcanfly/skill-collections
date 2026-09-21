@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "stage",
+    "status",
+    "hard_checks",
+    "blockers"
+  ],
+  "properties": {
+    "stage": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "hard_checks": {
+      "type": "object"
+    },
+    "blockers": {
+      "type": "array"
+    },
+    "metrics": {
+      "type": "object"
+    }
+  }
+}

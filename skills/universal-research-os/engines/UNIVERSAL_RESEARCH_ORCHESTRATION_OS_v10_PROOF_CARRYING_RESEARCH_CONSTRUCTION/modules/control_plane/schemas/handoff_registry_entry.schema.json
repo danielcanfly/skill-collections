@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "handoff_id",
+    "handoff_sha256",
+    "status",
+    "orchestration_os_version",
+    "audit_os_version",
+    "expected_output_name"
+  ],
+  "properties": {
+    "handoff_id": {
+      "type": "string"
+    },
+    "handoff_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "REGISTERED",
+        "ACTIVE",
+        "COMPLETED",
+        "SUPERSEDED_DO_NOT_EXECUTE",
+        "REVOKED"
+      ]
+    },
+    "orchestration_os_version": {
+      "type": "string"
+    },
+    "audit_os_version": {
+      "type": "string"
+    },
+    "expected_output_name": {
+      "type": "string"
+    },
+    "superseded_by": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    }
+  }
+}

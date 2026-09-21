@@ -1,0 +1,57 @@
+{
+  "profile_id": "REFERENCE_STRICT",
+  "version": "1.0",
+  "allow_implicit_waivers": false,
+  "stage_requirements": {
+    "G0": {
+      "all_candidate_crc_pass": true,
+      "all_candidate_manifests_pass": true,
+      "immutable_byte_identity": true
+    },
+    "G1": {
+      "all_active_objects_mapped": true,
+      "deterministic_ids": true
+    },
+    "G2": {
+      "unresolved_semantic_groups": 0,
+      "alias_collisions": 0,
+      "reversible_migrations": true
+    },
+    "G3": {
+      "all_sources_resolved": true,
+      "one_family_per_source": true,
+      "access_inference_forbidden": true
+    },
+    "G4": {
+      "atomic_lineage_preservation_rate": 1.0,
+      "unresolved_claim_identity": 0
+    },
+    "G5": {
+      "six_layer_case_model": true,
+      "unresolved_case_identity": 0
+    },
+    "G6": {
+      "broken_links": 0,
+      "unknown_relationship_types": 0,
+      "duplicate_edge_keys": 0,
+      "active_orphans": 0
+    },
+    "G7": {
+      "test_count": 240,
+      "classes": 12,
+      "tests_per_class": 20,
+      "holdout_ratio_min": 0.3,
+      "negative_ratio_min": 0.4,
+      "pass_rate": 1.0,
+      "cutoff": 10
+    },
+    "G8": {
+      "okf_errors": 0,
+      "okf_warnings": 0,
+      "p0": 0,
+      "p1": 0,
+      "deterministic_packages": 5,
+      "fresh_extract_pass": true
+    }
+  }
+}

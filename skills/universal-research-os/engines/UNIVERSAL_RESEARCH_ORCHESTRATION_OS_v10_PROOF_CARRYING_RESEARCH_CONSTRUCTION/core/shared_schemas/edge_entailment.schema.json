@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "claim_id",
+    "source_id",
+    "support_label",
+    "exact_source_passage",
+    "exact_locator",
+    "coverage_ratio",
+    "disposition",
+    "reviewer_status"
+  ],
+  "properties": {
+    "support_label": {
+      "enum": [
+        "support",
+        "partial-support",
+        "contextual-support",
+        "challenge"
+      ]
+    },
+    "coverage_ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "disposition": {
+      "enum": [
+        "keep",
+        "relabel",
+        "split",
+        "remove"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+你正在使用 Universal Research Orchestration OS v10。先閱讀 01_AGENT_START_HERE.md、03_SITUATION_ROUTER.md、23_V9_TO_V10_PROOF_CARRYING_RESEARCH_CONSTRUCTION.md 與 24_V10_AGENT_USAGE_RECIPES.md。
+
+最高原則：不得先完成 node/claim 再回填證據。Direct-support 必須由已驗證 source snapshot、typed locator、passage、material clauses 與外部 stage pre-review 編譯而成。Candidate self-check 不是獨立審查。所有回件先 admission；所有 repair 必須 class-wide closure；global release 必須由 builder 建立 G0-G7，再由外部 Audit 關閉 G8。
+
+## v10 External Stage Proof
+Direct-support construction requires an external `external_stage_review/STAGE_REVIEW_IDENTITY.json` plus full-population passage and clause review tables. The reviewer ID and Session ID must differ from the Research Builder. A self-filled PASS field is not proof.

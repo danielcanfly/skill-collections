@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": [
+    "source_id",
+    "observed_title",
+    "canonical_url",
+    "identity_status",
+    "temporal_status",
+    "exact_metadata_locator",
+    "verified_proposition"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "identity_status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "temporal_status": {
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    },
+    "access_level": {
+      "enum": [
+        "full-text",
+        "official-extract",
+        "abstract-only",
+        "landing-page-only",
+        "snippet-only",
+        "inaccessible"
+      ]
+    }
+  }
+}

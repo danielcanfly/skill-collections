@@ -1,0 +1,208 @@
+{
+  "registry_version": "6.0.0-v10-proof-carrying",
+  "validators": [
+    {
+      "id": "contract_lineage",
+      "script": "validate_contract_lineage.py",
+      "dimension": "compatibility",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "external_stage_review",
+      "script": "validate_external_stage_review.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "proof_chain",
+      "script": "validate_proof_chain.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "clause_stage",
+      "script": "validate_clause_stage.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "passage_stage",
+      "script": "validate_passage_stage.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_snapshots",
+      "script": "validate_source_snapshots.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_identity",
+      "script": "validate_source_identity.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "temporal_metadata",
+      "script": "validate_temporal_metadata.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_passage_registry",
+      "script": "validate_source_passage_registry.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "claim_clause_matrix",
+      "script": "validate_claim_clause_matrix.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "edge_entailment",
+      "script": "validate_edge_entailment.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "cross_domain_compatibility",
+      "script": "validate_cross_domain_compatibility.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "contextual_relevance",
+      "script": "validate_contextual_relevance.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "candidate_self_check",
+      "script": "validate_candidate_self_check.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "retrieval_results",
+      "script": "validate_retrieval_results.py",
+      "dimension": "retrieval",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "retrieval_leakage",
+      "script": "validate_retrieval_leakage.py",
+      "dimension": "retrieval",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "node_diversity",
+      "script": "validate_node_diversity.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "lineage_cascade",
+      "script": "validate_lineage_cascade.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_note_depth",
+      "script": "validate_source_note_depth.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "case_independence",
+      "script": "validate_case_independence.py",
+      "dimension": "semantic",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "seal_state",
+      "script": "validate_seal_state.py",
+      "dimension": "seal",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "identity_surfaces",
+      "script": "validate_identity_surfaces.py",
+      "dimension": "compatibility",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "manifest_strict",
+      "script": "validate_manifest_strict.py",
+      "dimension": "seal",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_evidence_coverage",
+      "script": "validate_source_evidence_coverage.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "source_metadata_completeness",
+      "script": "validate_source_metadata_completeness.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "node_operational_depth",
+      "script": "validate_node_operational_depth.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "portable_reproducibility",
+      "script": "validate_portable_reproducibility.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "production_surface_hygiene",
+      "script": "validate_production_surface_hygiene.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    },
+    {
+      "id": "zero_open_findings",
+      "script": "validate_zero_open_findings.py",
+      "dimension": "production_assurance",
+      "mode": "read-only",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "domain_id": "demo-domain",
+  "domain_title": "示範知識域",
+  "domain_title_en": "Demonstration Knowledge Domain",
+  "purpose": "示範如何使用 Universal Dispatcher v2 建立高標準、可獨立施工並在回傳前接受嚴格驗收的子研究包。",
+  "audience": "Knowledge OS architects and research orchestrators",
+  "languages": [
+    "繁體中文",
+    "English"
+  ],
+  "global_exclusions": [
+    "不處理任何真實專業結論，僅示範封裝與治理流程。"
+  ],
+  "children": [
+    {
+      "session_id": "DEMO-01-foundations",
+      "slug": "foundations",
+      "title": "示範基礎與決策框架",
+      "title_en": "Demo Foundations and Decision Framework",
+      "mission": "建立示範知識域的基礎定義、決策規則、診斷框架、失敗模式、案例與可重現 retrieval surface，目的僅為驗證 Universal Dispatcher 的跨領域施工能力。",
+      "candidate_version": "v1",
+      "final_output_name": "DEMO_01_foundations_PRODUCTION_CANDIDATE_v1.zip",
+      "namespace_prefixes": [
+        "demo-p01-"
+      ],
+      "canonical_ownership": [
+        "foundational definitions",
+        "boundary conditions",
+        "decision rules",
+        "diagnostic rules"
+      ],
+      "explicit_exclusions": [
+        "domain-specific medical advice",
+        "domain-specific legal advice",
+        "production factual claims"
+      ],
+      "research_modules": [
+        {
+          "module_id": "M01",
+          "title": "Demo module 1",
+          "must_research": [
+            "Precise definition and boundary for module 1",
+            "Failure and counterexample for module 1"
+          ],
+          "must_compare": [
+            "Module 1 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 1"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        },
+        {
+          "module_id": "M02",
+          "title": "Demo module 2",
+          "must_research": [
+            "Precise definition and boundary for module 2",
+            "Failure and counterexample for module 2"
+          ],
+          "must_compare": [
+            "Module 2 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 2"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        },
+        {
+          "module_id": "M03",
+          "title": "Demo module 3",
+          "must_research": [
+            "Precise definition and boundary for module 3",
+            "Failure and counterexample for module 3"
+          ],
+          "must_compare": [
+            "Module 3 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 3"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        },
+        {
+          "module_id": "M04",
+          "title": "Demo module 4",
+          "must_research": [
+            "Precise definition and boundary for module 4",
+            "Failure and counterexample for module 4"
+          ],
+          "must_compare": [
+            "Module 4 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 4"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        },
+        {
+          "module_id": "M05",
+          "title": "Demo module 5",
+          "must_research": [
+            "Precise definition and boundary for module 5",
+            "Failure and counterexample for module 5"
+          ],
+          "must_compare": [
+            "Module 5 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 5"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        },
+        {
+          "module_id": "M06",
+          "title": "Demo module 6",
+          "must_research": [
+            "Precise definition and boundary for module 6",
+            "Failure and counterexample for module 6"
+          ],
+          "must_compare": [
+            "Module 6 versus adjacent module"
+          ],
+          "expected_outputs": [
+            "Concept and checklist for module 6"
+          ],
+          "source_families": [
+            "primary authority",
+            "academic synthesis",
+            "critical challenge"
+          ]
+        }
+      ],
+      "core_questions": [
+        "What is the exact decision boundary for demo question 1?",
+        "What is the exact decision boundary for demo question 2?",
+        "What is the exact decision boundary for demo question 3?",
+        "What is the exact decision boundary for demo question 4?",
+        "What is the exact decision boundary for demo question 5?",
+        "What is the exact decision boundary for demo question 6?",
+        "What is the exact decision boundary for demo question 7?",
+        "What is the exact decision boundary for demo question 8?"
+      ],
+      "expected_nodes": [
+        {
+          "candidate_id": "demo-p01-concept-01",
+          "kind": "concept",
+          "title": "Foundational definition",
+          "definition_query": "How should foundational definition be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying foundational definition to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make foundational definition appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-02"
+        },
+        {
+          "candidate_id": "demo-p01-concept-02",
+          "kind": "concept",
+          "title": "Boundary and exclusions",
+          "definition_query": "How should boundary and exclusions be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying boundary and exclusions to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make boundary and exclusions appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-03"
+        },
+        {
+          "candidate_id": "demo-p01-concept-03",
+          "kind": "concept",
+          "title": "Core mechanism",
+          "definition_query": "How should core mechanism be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying core mechanism to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make core mechanism appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-04"
+        },
+        {
+          "candidate_id": "demo-p01-concept-04",
+          "kind": "concept",
+          "title": "Primary workflow",
+          "definition_query": "How should primary workflow be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying primary workflow to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make primary workflow appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-05"
+        },
+        {
+          "candidate_id": "demo-p01-concept-05",
+          "kind": "concept",
+          "title": "Decision rule",
+          "definition_query": "How should decision rule be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying decision rule to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make decision rule appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-06"
+        },
+        {
+          "candidate_id": "demo-p01-concept-06",
+          "kind": "concept",
+          "title": "Diagnostic rule",
+          "definition_query": "How should diagnostic rule be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying diagnostic rule to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make diagnostic rule appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-07"
+        },
+        {
+          "candidate_id": "demo-p01-concept-07",
+          "kind": "concept",
+          "title": "Comparison framework",
+          "definition_query": "How should comparison framework be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying comparison framework to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make comparison framework appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-08"
+        },
+        {
+          "candidate_id": "demo-p01-concept-08",
+          "kind": "concept",
+          "title": "Failure mode",
+          "definition_query": "How should failure mode be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying failure mode to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make failure mode appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-09"
+        },
+        {
+          "candidate_id": "demo-p01-concept-09",
+          "kind": "concept",
+          "title": "Data requirements",
+          "definition_query": "How should data requirements be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying data requirements to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make data requirements appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-checklist-10"
+        },
+        {
+          "candidate_id": "demo-p01-checklist-10",
+          "kind": "checklist",
+          "title": "Quality checklist",
+          "definition_query": "How should quality checklist be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying quality checklist to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make quality checklist appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-11"
+        },
+        {
+          "candidate_id": "demo-p01-concept-11",
+          "kind": "concept",
+          "title": "Evidence model",
+          "definition_query": "How should evidence model be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying evidence model to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make evidence model appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-pattern-12"
+        },
+        {
+          "candidate_id": "demo-p01-pattern-12",
+          "kind": "pattern",
+          "title": "Case pattern",
+          "definition_query": "How should case pattern be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying case pattern to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make case pattern appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-pattern-13"
+        },
+        {
+          "candidate_id": "demo-p01-pattern-13",
+          "kind": "pattern",
+          "title": "Implementation pattern",
+          "definition_query": "How should implementation pattern be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying implementation pattern to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make implementation pattern appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-pattern-14"
+        },
+        {
+          "candidate_id": "demo-p01-pattern-14",
+          "kind": "pattern",
+          "title": "Governance pattern",
+          "definition_query": "How should governance pattern be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying governance pattern to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make governance pattern appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-checklist-15"
+        },
+        {
+          "candidate_id": "demo-p01-checklist-15",
+          "kind": "checklist",
+          "title": "Audit checklist",
+          "definition_query": "How should audit checklist be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying audit checklist to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make audit checklist appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-pattern-16"
+        },
+        {
+          "candidate_id": "demo-p01-pattern-16",
+          "kind": "pattern",
+          "title": "Misleading-improvement pattern",
+          "definition_query": "How should misleading-improvement pattern be precisely defined, bounded and distinguished from adjacent concepts in the demo domain?",
+          "decision_query": "When applying misleading-improvement pattern to a real decision, what inputs, steps, guardrails and evidence are required?",
+          "failure_query": "What misleading, adversarial or failure conditions can make misleading-improvement pattern appear valid when it is not?",
+          "negative_candidate_id": "demo-p01-concept-01"
+        }
+      ],
+      "mandatory_source_routes": [
+        {
+          "route_id": "SR01",
+          "authority_tier": "primary-authoritative",
+          "source_family": "Demo source family 1",
+          "target_examples": [
+            "Example source family 1"
+          ],
+          "why_required": "Covers evidence role 1",
+          "challenge_or_limit_query": "What limitations apply to demo source family 1?"
+        },
+        {
+          "route_id": "SR02",
+          "authority_tier": "primary-empirical",
+          "source_family": "Demo source family 2",
+          "target_examples": [
+            "Example source family 2"
+          ],
+          "why_required": "Covers evidence role 2",
+          "challenge_or_limit_query": "What limitations apply to demo source family 2?"
+        },
+        {
+          "route_id": "SR03",
+          "authority_tier": "secondary-synthesis",
+          "source_family": "Demo source family 3",
+          "target_examples": [
+            "Example source family 3"
+          ],
+          "why_required": "Covers evidence role 3",
+          "challenge_or_limit_query": "What limitations apply to demo source family 3?"
+        },
+        {
+          "route_id": "SR04",
+          "authority_tier": "practitioner",
+          "source_family": "Demo source family 4",
+          "target_examples": [
+            "Example source family 4"
+          ],
+          "why_required": "Covers evidence role 4",
+          "challenge_or_limit_query": "What limitations apply to demo source family 4?"
+        },
+        {
+          "route_id": "SR05",
+          "authority_tier": "case-first-party",
+          "source_family": "Demo source family 5",
+          "target_examples": [
+            "Example source family 5"
+          ],
+          "why_required": "Covers evidence role 5",
+          "challenge_or_limit_query": "What limitations apply to demo source family 5?"
+        },
+        {
+          "route_id": "SR06",
+          "authority_tier": "critical-challenge",
+          "source_family": "Demo source family 6",
+          "target_examples": [
+            "Example source family 6"
+          ],
+          "why_required": "Covers evidence role 6",
+          "challenge_or_limit_query": "What limitations apply to demo source family 6?"
+        },
+        {
+          "route_id": "SR07",
+          "authority_tier": "primary-authoritative",
+          "source_family": "Demo source family 7",
+          "target_examples": [
+            "Example source family 7"
+          ],
+          "why_required": "Covers evidence role 7",
+          "challenge_or_limit_query": "What limitations apply to demo source family 7?"
+        },
+        {
+          "route_id": "SR08",
+          "authority_tier": "critical-challenge",
+          "source_family": "Demo source family 8",
+          "target_examples": [
+            "Example source family 8"
+          ],
+          "why_required": "Covers evidence role 8",
+          "challenge_or_limit_query": "What limitations apply to demo source family 8?"
+        }
+      ],
+      "debates": [
+        "Demo debate 1",
+        "Demo debate 2",
+        "Demo debate 3",
+        "Demo debate 4",
+        "Demo debate 5"
+      ],
+      "case_types": [
+        "successful application",
+        "failed application",
+        "boundary case"
+      ],
+      "case_minimum": 6,
+      "semantic_risks": [
+        {
+          "risk_id": "R01",
+          "risk": "Demo semantic risk 1",
+          "affected_nodes": [
+            "demo-p01-concept-01"
+          ],
+          "preventive_control": "Control 1",
+          "required_evidence": "Evidence needed 1"
+        },
+        {
+          "risk_id": "R02",
+          "risk": "Demo semantic risk 2",
+          "affected_nodes": [
+            "demo-p01-concept-02"
+          ],
+          "preventive_control": "Control 2",
+          "required_evidence": "Evidence needed 2"
+        },
+        {
+          "risk_id": "R03",
+          "risk": "Demo semantic risk 3",
+          "affected_nodes": [
+            "demo-p01-concept-03"
+          ],
+          "preventive_control": "Control 3",
+          "required_evidence": "Evidence needed 3"
+        },
+        {
+          "risk_id": "R04",
+          "risk": "Demo semantic risk 4",
+          "affected_nodes": [
+            "demo-p01-concept-04"
+          ],
+          "preventive_control": "Control 4",
+          "required_evidence": "Evidence needed 4"
+        },
+        {
+          "risk_id": "R05",
+          "risk": "Demo semantic risk 5",
+          "affected_nodes": [
+            "demo-p01-concept-05"
+          ],
+          "preventive_control": "Control 5",
+          "required_evidence": "Evidence needed 5"
+        }
+      ],
+      "auditor_holdout_tests": [
+        {
+          "test_id": "A01",
+          "class": "adversarial",
+          "query": "In the demo domain, how should scenario 1 be resolved without confusing foundational definition with boundary and exclusions?",
+          "expected_ids": [
+            "demo-p01-concept-01"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-02"
+          ]
+        },
+        {
+          "test_id": "A02",
+          "class": "multi-hop",
+          "query": "In the demo domain, how should scenario 2 be resolved without confusing boundary and exclusions with core mechanism?",
+          "expected_ids": [
+            "demo-p01-concept-02"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-03"
+          ]
+        },
+        {
+          "test_id": "A03",
+          "class": "decision/application",
+          "query": "In the demo domain, how should scenario 3 be resolved without confusing core mechanism with primary workflow?",
+          "expected_ids": [
+            "demo-p01-concept-03"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-04"
+          ]
+        },
+        {
+          "test_id": "A04",
+          "class": "audit",
+          "query": "In the demo domain, how should scenario 4 be resolved without confusing primary workflow with decision rule?",
+          "expected_ids": [
+            "demo-p01-concept-04"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-05"
+          ]
+        },
+        {
+          "test_id": "A05",
+          "class": "adversarial",
+          "query": "In the demo domain, how should scenario 5 be resolved without confusing decision rule with diagnostic rule?",
+          "expected_ids": [
+            "demo-p01-concept-05"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-06"
+          ]
+        },
+        {
+          "test_id": "A06",
+          "class": "multi-hop",
+          "query": "In the demo domain, how should scenario 6 be resolved without confusing diagnostic rule with comparison framework?",
+          "expected_ids": [
+            "demo-p01-concept-06"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-07"
+          ]
+        },
+        {
+          "test_id": "A07",
+          "class": "decision/application",
+          "query": "In the demo domain, how should scenario 7 be resolved without confusing comparison framework with failure mode?",
+          "expected_ids": [
+            "demo-p01-concept-07"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-08"
+          ]
+        },
+        {
+          "test_id": "A08",
+          "class": "audit",
+          "query": "In the demo domain, how should scenario 8 be resolved without confusing failure mode with data requirements?",
+          "expected_ids": [
+            "demo-p01-concept-08"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-09"
+          ]
+        },
+        {
+          "test_id": "A09",
+          "class": "adversarial",
+          "query": "In the demo domain, how should scenario 9 be resolved without confusing data requirements with quality checklist?",
+          "expected_ids": [
+            "demo-p01-concept-09"
+          ],
+          "negative_ids": [
+            "demo-p01-checklist-10"
+          ]
+        },
+        {
+          "test_id": "A10",
+          "class": "multi-hop",
+          "query": "In the demo domain, how should scenario 10 be resolved without confusing quality checklist with evidence model?",
+          "expected_ids": [
+            "demo-p01-checklist-10"
+          ],
+          "negative_ids": [
+            "demo-p01-concept-11"
+          ]
+        }
+      ],
+      "source_authority_tests": [
+        {
+          "test_id": "SP01",
+          "query": "Where should the authoritative primary definition and decision rule for the demo foundational concept be verified?",
+          "minimum_primary_sources": 2
+        },
+        {
+          "test_id": "SP02",
+          "query": "Which independent primary sources should verify the demo diagnostic and audit rules before using practitioner guidance?",
+          "minimum_primary_sources": 2
+        }
+      ]
+    }
+  ],
+  "orchestration_schema_version": "10.0.0"
+}

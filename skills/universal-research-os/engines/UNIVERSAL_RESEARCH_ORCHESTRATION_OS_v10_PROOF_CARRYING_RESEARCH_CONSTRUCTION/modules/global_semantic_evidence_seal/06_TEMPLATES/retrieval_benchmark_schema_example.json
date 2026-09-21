@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "created_at": "ISO-8601",
+  "frozen": true,
+  "holdout_policy": "never exposed to tuning",
+  "tests": [
+    {
+      "test_id": "RET-0001",
+      "class": "boundary",
+      "query": "Question without expected title, alias or ID",
+      "expected_ids": ["CONCEPT-000001"],
+      "negative_ids": ["CONCEPT-000002"],
+      "top_k": 10,
+      "required_recall": 1.0,
+      "split": "holdout",
+      "authoring_provenance": "independent-auditor",
+      "contamination_status": "CLEAN"
+    }
+  ]
+}

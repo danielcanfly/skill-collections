@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "commands": 1,
+    "required_commands": [
+      "retrieval"
+    ],
+    "scanned_executable_files": 1,
+    "cleaned_outputs": 1,
+    "regenerated_outputs": 1,
+    "clean_rebuild_enforced": true
+  }
+}

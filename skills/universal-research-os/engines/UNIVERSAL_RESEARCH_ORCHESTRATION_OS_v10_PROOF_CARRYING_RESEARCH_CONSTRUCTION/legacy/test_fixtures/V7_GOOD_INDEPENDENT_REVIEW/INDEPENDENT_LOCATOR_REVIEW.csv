@@ -1,0 +1,2 @@
+passage_id,locator_type,locator_value,resolved_verdict,snapshot_sha256,reviewer_notes
+P1,paragraph,"Section 1, paragraph 2",PASS,1b6f27536c5947d4a20109296d1756b03af07c64bc270167ed47a0f239da660f,Locator resolves within immutable snapshot.

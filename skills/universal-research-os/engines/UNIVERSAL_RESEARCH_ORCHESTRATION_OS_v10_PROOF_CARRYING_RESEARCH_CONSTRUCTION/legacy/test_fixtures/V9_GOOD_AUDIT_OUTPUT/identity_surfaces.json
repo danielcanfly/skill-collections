@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "candidate_id": "demo-v1",
+    "candidate_version": "v1",
+    "final_output_name": "DEMO_PRODUCTION_CANDIDATE_v1.zip"
+  }
+}

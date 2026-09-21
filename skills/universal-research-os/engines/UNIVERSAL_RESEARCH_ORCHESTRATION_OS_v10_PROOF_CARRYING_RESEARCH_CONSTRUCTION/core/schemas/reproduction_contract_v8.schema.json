@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:universal-research-os:v8:reproduction-contract",
+  "title": "Portable Reproduction Contract v8",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "root_resolution", "source_date_epoch", "commands"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "root_resolution": {"const": "script-relative"},
+    "source_date_epoch": {"type": "integer", "minimum": 0},
+    "commands": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "cwd", "argv", "outputs"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1, "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+          "cwd": {"type": "string", "minLength": 1, "not": {"pattern": "^(?:/|[A-Za-z]:\\\\)"}},
+          "argv": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "outputs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "not": {"pattern": "^(?:/|[A-Za-z]:\\\\)"}}}
+        }
+      }
+    }
+  }
+}

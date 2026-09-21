@@ -1,0 +1,13 @@
+{
+  "runtime_version": "10.0.0",
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10",
+  "proof_carrying": true,
+  "sealed_at_required": true,
+  "retrieval_schema": "ranked_ids+query_sha256+corpus_sha256",
+  "validator_source": "core/canonical_validators_v10",
+  "external_stage_review": "FULL_POPULATION_SHA_BOUND",
+  "retrieval_producer_consumer_parity": true,
+  "source_note_depth_in_finalizer": true,
+  "seal_state_single_machine": true
+}

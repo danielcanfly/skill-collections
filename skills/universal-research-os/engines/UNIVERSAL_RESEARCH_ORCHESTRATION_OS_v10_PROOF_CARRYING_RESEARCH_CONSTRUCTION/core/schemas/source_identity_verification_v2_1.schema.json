@@ -1,0 +1,42 @@
+{
+  "required_columns": [
+    "source_id",
+    "declared_title",
+    "observed_title",
+    "title_match_status",
+    "declared_authors",
+    "observed_authors",
+    "author_match_status",
+    "identifier_type",
+    "declared_identifier",
+    "observed_identifier",
+    "identifier_match_status",
+    "canonical_url",
+    "publication_date",
+    "effective_or_period_date",
+    "accessed_at",
+    "date_basis",
+    "access_level",
+    "verification_method",
+    "exact_metadata_locator",
+    "metadata_excerpt",
+    "verified_proposition",
+    "abstract_support_allowed",
+    "identity_status",
+    "temporal_status",
+    "reviewer",
+    "notes",
+    "metadata_locator",
+    "identity_verdict",
+    "reviewer_status"
+  ],
+  "row_rules": [
+    "all governed active sources have exactly one row",
+    "identity_status=PASS",
+    "temporal_status=PASS",
+    "reviewer_status=PASS",
+    "aggregate PASS forbidden if any row incomplete"
+  ],
+  "schema_version": "3.0.0",
+  "type": "csv"
+}

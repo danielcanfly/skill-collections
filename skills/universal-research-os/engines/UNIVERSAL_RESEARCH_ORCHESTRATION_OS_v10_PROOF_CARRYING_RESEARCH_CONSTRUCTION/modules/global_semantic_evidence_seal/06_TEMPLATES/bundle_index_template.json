@@ -1,0 +1,13 @@
+{
+  "release_id": "domain-global-vN.N.N",
+  "content_version": "N.N.N",
+  "lifecycle": "GLOBAL_MERGE_READY",
+  "canonical_lineage_sha256": "",
+  "bundles": {
+    "production": {"filename": "", "sha256": "", "member_count": 0, "status": "PASS"},
+    "kos": {"filename": "", "sha256": "", "member_count": 0, "status": "PASS"},
+    "okf": {"filename": "", "sha256": "", "member_count": 0, "status": "PASS"},
+    "r2": {"filename": "", "sha256": "", "member_count": 0, "status": "PASS"},
+    "audit": {"filename": "", "sha256": "", "member_count": 0, "status": "PASS"}
+  }
+}

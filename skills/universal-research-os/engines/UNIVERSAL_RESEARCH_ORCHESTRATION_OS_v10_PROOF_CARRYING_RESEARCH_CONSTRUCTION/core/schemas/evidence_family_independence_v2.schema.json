@@ -1,0 +1,27 @@
+{
+  "independence_dimensions": [
+    "issuer_root",
+    "method_root",
+    "data_generation_root",
+    "publication_chain_root",
+    "derivative relationship"
+  ],
+  "required_columns": [
+    "evidence_family_id",
+    "canonical_name",
+    "description",
+    "source_ids",
+    "issuer_root",
+    "method_root",
+    "data_generation_root",
+    "publication_chain_root",
+    "derivative_of_family_id",
+    "independence_basis",
+    "modules",
+    "claims",
+    "status",
+    "notes"
+  ],
+  "schema_version": "2.0.0",
+  "type": "csv"
+}

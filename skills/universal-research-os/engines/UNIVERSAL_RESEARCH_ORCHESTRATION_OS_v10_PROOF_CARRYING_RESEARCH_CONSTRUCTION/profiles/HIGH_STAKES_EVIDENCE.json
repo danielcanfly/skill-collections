@@ -1,0 +1,27 @@
+{
+  "profile_id": "HIGH_STAKES_EVIDENCE",
+  "minimum_manual_samples": 40,
+  "minimum_source_identity_pass_ratio": 1.0,
+  "minimum_edge_entailment_pass_ratio": 1.0,
+  "minimum_holdout_ratio": 0.25,
+  "minimum_negative_ratio": 0.25,
+  "required_retrieval_classes": [
+    "definition",
+    "comparison",
+    "how-to",
+    "decision/application",
+    "audit",
+    "source-provenance",
+    "multi-hop",
+    "adversarial"
+  ],
+  "node_similarity_threshold": 0.84,
+  "manifest_coverage": 1.0,
+  "require_manual_semantic_pass": true,
+  "require_authority_ranking": true,
+  "allow_open_p2": true,
+  "require_second_reviewer_for_p0_p1_disposition": true,
+  "profile_version": "10.0.0",
+  "audit_os_version": "6.0.0",
+  "contract_generation": "v10"
+}

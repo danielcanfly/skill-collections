@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "finding_id",
+    "severity",
+    "rule_id",
+    "status",
+    "summary",
+    "evidence",
+    "blocking"
+  ],
+  "properties": {
+    "finding_id": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2"
+      ]
+    },
+    "rule_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "open",
+        "resolved",
+        "false-positive",
+        "accepted-risk",
+        "not-applicable"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "blocking": {
+      "type": "boolean"
+    },
+    "disposition_receipt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

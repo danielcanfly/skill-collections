@@ -1,0 +1,11 @@
+{
+  "package_type": "INDEPENDENT_AUDIT_OUTPUT",
+  "audit_os_version": "6.0.0",
+  "orchestration_contract": "v10",
+  "candidate_filename": "V9_GOOD_CANDIDATE.zip",
+  "candidate_sha256": "853e5f0294b73babf366e0c3dba4393be6e500e30680225686a55aa6f726d86c",
+  "admission_receipt_sha256": "e0d87f79506375c3663e9fb5ed8b938edf4a2e15e5d913587874bbbcbf9e5ee5",
+  "independent_review_receipt_sha256": "3d9412b518e6c78e1ae0a897f36195e62d1f581fe1025803dd8dfa0c520df17f",
+  "audit_summary_sha256": "c8dc4ca676d314b17e5022c172195317d27cbad9100721bfdb6dda7c9c8b8feb",
+  "status": "MERGE_READY"
+}

@@ -1,0 +1,12 @@
+{
+  "decision": "BOUNDED_GLOBAL_REPAIR|SOURCE_REFRESH_REPAIR|RESEARCH_RESTART_REQUIRED",
+  "authoritative_input": "",
+  "canonical_identity_stable": true,
+  "research_facts_materially_wrong": false,
+  "semantic_repair_required": true,
+  "evidence_repair_required": true,
+  "retrieval_rebuild_required": true,
+  "release_seal_required": true,
+  "live_pointer_change_allowed": false,
+  "rationale": []
+}

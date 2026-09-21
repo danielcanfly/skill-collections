@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "tests": 1,
+    "results": 1,
+    "corpus_hash": "abc123"
+  }
+}

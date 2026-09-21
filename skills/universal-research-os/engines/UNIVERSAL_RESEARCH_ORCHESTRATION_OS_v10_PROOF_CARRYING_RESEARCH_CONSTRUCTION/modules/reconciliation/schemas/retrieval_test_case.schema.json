@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "test_id",
+    "class",
+    "query",
+    "expected_ids",
+    "negative_ids",
+    "holdout"
+  ],
+  "properties": {
+    "test_id": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "negative_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "holdout": {
+      "type": "boolean"
+    },
+    "language": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    }
+  }
+}

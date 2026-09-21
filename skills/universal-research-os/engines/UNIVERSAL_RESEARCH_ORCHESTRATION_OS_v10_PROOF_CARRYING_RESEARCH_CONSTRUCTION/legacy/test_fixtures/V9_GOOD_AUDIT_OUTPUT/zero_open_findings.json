@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "open_findings": 0,
+    "allow_open_p2": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "identity_rows": 2,
+    "active_sources": 2,
+    "individual_pass": 2
+  }
+}

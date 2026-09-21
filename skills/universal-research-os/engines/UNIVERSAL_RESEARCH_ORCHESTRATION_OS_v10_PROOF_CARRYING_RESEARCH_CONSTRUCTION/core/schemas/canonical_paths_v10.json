@@ -1,0 +1,10 @@
+{
+  "contract_generation": "v10",
+  "source_snapshots": "research/source_snapshot_registry.csv",
+  "passages": "research/source_passage_registry.csv",
+  "clauses": "research/material_clause_registry.csv",
+  "compiled_claims": "research/compiled_direct_support_claims.csv",
+  "edge_entailment": "research/edge_entailment.csv",
+  "seal_state": "qa/seal_state.json",
+  "contract_lineage": "handoff/contract_lineage.json"
+}

@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "status",
+    "originating_handoff_id",
+    "originating_handoff_sha256",
+    "orchestration_os_version",
+    "audit_os_version",
+    "contract_generation",
+    "expected_output_name"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "PENDING_BINDING",
+        "BOUND"
+      ]
+    },
+    "originating_handoff_id": {
+      "type": "string"
+    },
+    "originating_handoff_sha256": {
+      "type": "string"
+    },
+    "orchestration_os_version": {
+      "type": "string"
+    },
+    "audit_os_version": {
+      "type": "string"
+    },
+    "contract_generation": {
+      "type": "string"
+    },
+    "source_candidate_sha256": {
+      "type": "string"
+    },
+    "repair_contract_sha256": {
+      "type": "string"
+    },
+    "expected_output_name": {
+      "type": "string"
+    }
+  }
+}

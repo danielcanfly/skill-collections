@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "surfaces": 1,
+    "surface_files": 3,
+    "r2_plan_files": 0,
+    "r2_objects": 0
+  }
+}

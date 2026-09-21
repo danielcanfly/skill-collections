@@ -1,0 +1,29 @@
+{
+  "required": [
+    "status",
+    "reviewer",
+    "reviewed_at",
+    "sample_count",
+    "source_identity_status",
+    "edge_entailment_status",
+    "contextual_relevance_status",
+    "lineage_status",
+    "retrieval_status",
+    "case_independence_status",
+    "source_note_depth_status",
+    "node_diversity_status",
+    "temporal_metadata_status",
+    "source_identity_rows_total",
+    "source_identity_rows_pass",
+    "edge_rows_total",
+    "edge_rows_pass",
+    "lineage_nodes_total",
+    "lineage_nodes_pass",
+    "open_p0",
+    "open_p1"
+  ],
+  "rules": [
+    "aggregate PASS only when every component PASS and governed row counts reconcile"
+  ],
+  "schema_version": "3.0.0"
+}
