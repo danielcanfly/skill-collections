@@ -1,0 +1,64 @@
+name: Materialize Universal Research OS upload
+
+on:
+  push:
+    branches:
+      - upload/universal-research-os-v1.0.1
+    paths:
+      - .github/urs-upload/_READY
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild exact public skill tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/urs-upload/chunk_*.b64 | base64 --decode > /tmp/urs_stage.tar.xz
+          echo "8da3e5d77a555862dee55f36f555165b977429ea59986238d671038987853f0c  /tmp/urs_stage.tar.xz" | sha256sum -c -
+          rm -rf /tmp/urs_stage /tmp/urs_rebuilt
+          mkdir -p /tmp/urs_stage
+          tar -xJf /tmp/urs_stage.tar.xz -C /tmp/urs_stage
+          python /tmp/urs_stage/rebuild.py /tmp/urs_stage /tmp/urs_rebuilt
+          rm -rf skills/universal-research-os
+          mkdir -p skills
+          cp -a /tmp/urs_rebuilt skills/universal-research-os
+          python skills/universal-research-os/scripts/verify_skill_package.py
+
+      - name: Update repository index
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("README.md")
+          text = p.read_text()
+          row = "| [Universal Research OS](skills/universal-research-os/) | Public Release | Apache-2.0 | Proof-carrying research orchestration and independent audit system for source-first construction, admission, bounded repair, global reconciliation, and production release. |"
+          if row not in text:
+              anchor = "| [Blog Production Workflow](skills/blog-production-workflow/) | Public Beta | Apache-2.0 | Profile-driven 11+1 editorial workflow with setup contracts, research/drafting/repair/visual/release stages, hardened handoff validation, and independent qualification. |"
+              if anchor not in text:
+                  raise SystemExit("README skill-table anchor not found")
+              text = text.replace(anchor, anchor + "\n" + row)
+              p.write_text(text)
+          PY
+
+      - name: Remove staging transport and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .github/urs-upload
+          rm -f .github/workflows/urs-upload.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: add universal research os skill"
+          git push origin HEAD:upload/universal-research-os-v1.0.1
