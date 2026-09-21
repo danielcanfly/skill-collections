@@ -19,19 +19,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Rebuild exact public skill tree
+      - name: Download exact public release
         shell: bash
         run: |
           set -euo pipefail
-          cat .github/urs-upload/chunk_*.b64 | base64 --decode > /tmp/urs_stage.tar.xz
-          echo "8da3e5d77a555862dee55f36f555165b977429ea59986238d671038987853f0c  /tmp/urs_stage.tar.xz" | sha256sum -c -
-          rm -rf /tmp/urs_stage /tmp/urs_rebuilt
-          mkdir -p /tmp/urs_stage
-          tar -xJf /tmp/urs_stage.tar.xz -C /tmp/urs_stage
-          python /tmp/urs_stage/rebuild.py /tmp/urs_stage /tmp/urs_rebuilt
-          rm -rf skills/universal-research-os
-          mkdir -p skills
-          cp -a /tmp/urs_rebuilt skills/universal-research-os
+          curl --fail --location --retry 3 --output /tmp/universal-research-os.zip 'https://sdmntprnznorth.oaiusercontent.com/files/00000000-aa68-820b-8e9d-daa6ad7ebdca/raw?se=2026-09-21T09%3A21%3A41Z&sp=r&sv=2026-02-06&sr=b&scid=7b72a325-8336-575a-9d9e-7cfbd37d798d&skoid=f5e14fda-2af7-44a3-9d18-d372ffcad871&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-21T02%3A09%3A18Z&ske=2026-09-22T02%3A09%3A18Z&sks=b&skv=2026-02-06&sig=kpwod9/dgDHVB3mb1axATmpoUDrXi3AFfsp3GgXuyT8%3D'
+          echo "83d98b48570a4b7732c490d4fdc6740f941bb36b642d0dca1f1f275ac04c08ae  /tmp/universal-research-os.zip" | sha256sum -c -
+
+      - name: Materialize and verify skill tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/urs-release skills/universal-research-os
+          mkdir -p /tmp/urs-release skills/universal-research-os
+          unzip -q /tmp/universal-research-os.zip -d /tmp/urs-release
+          src="/tmp/urs-release/UNIVERSAL_RESEARCH_OS_SKILL_v1.0.1_PUBLIC_RELEASE"
+          test -d "$src"
+          cp -a "$src"/. skills/universal-research-os/
           python skills/universal-research-os/scripts/verify_skill_package.py
 
       - name: Update repository index
